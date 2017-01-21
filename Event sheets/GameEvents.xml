@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable constant="0" name="Platform" sid="737699132056232" static="0" type="number">0</variable>
         <variable constant="0" name="ScreenOffset" sid="854415207833270" static="0" type="number">0</variable>
         <comment>This variable holds the current scroll position, which gets smaller as the player moves upwards.</comment>
         <variable comment="The current scroll Y position" constant="0" name="MinScroll" sid="355734476877380" static="0" type="number">999</variable>
@@ -33,17 +34,128 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="167831373036314" type="System">
+                        <action id="-9" name="Set value" sid="764843130751517" type="System">
+                            <param id="0" name="Variable">Platform</param>
+                            <param id="1" name="Value">random(0, 4)</param>
+                        </action>
+                        <action disabled="1" id="-3" name="Create object" sid="167831373036314" type="System">
                             <param id="0" name="Object to create">Platform</param>
                             <param id="1" name="Layer">&quot;Game&quot;</param>
                             <param id="2" name="X">random(20, LayoutWidth - 40)</param>
                             <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
                         </action>
-                        <action id="-9" name="Set value" sid="188691156217794" type="System">
+                        <action disabled="1" id="-9" name="Set value" sid="188691156217794" type="System">
                             <param id="0" name="Variable">NextPlatform</param>
                             <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="787726045473103">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="489707858873436" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="808673811387687" type="System">
+                                    <param id="0" name="Object to create">Platform</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="533908671975774" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="463538080637263">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="115908308731824" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="664421415601435" type="System">
+                                    <param id="0" name="Object to create">Switch</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="370767819649480" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="434169498289939">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="915777114121971" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="598937254981348" type="System">
+                                    <param id="0" name="Object to create">Water</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="643767361318029" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="392191672517117">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="870237485792252" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="113777472653028" type="System">
+                                    <param id="0" name="Object to create">Fire</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="119515686695857" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="987668650603971">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="782621695952417" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="500219209294291" type="System">
+                                    <param id="0" name="Object to create">Shock</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="438729279095883" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -62,26 +174,137 @@
             </actions>
             <sub-events>
                 <comment>As we are scrolling, if the top of the screen has reached the position of the next platform to create, create it at a random position across the top of the screen.  Then also set another platform to be created at a random distance between 20 and 100 pixels up again.</comment>
-                <event-block sid="655880943511163">
+                <event-block sid="248131315069900">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="836632643395443" type="System">
+                        <condition id="-8" name="Compare two values" sid="607105036191713" type="System">
                             <param id="0" name="First value">NextPlatform</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Second value">ViewportTop(&quot;Game&quot;)</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="326325793539033" type="System">
+                        <action id="-9" name="Set value" sid="952888713699807" type="System">
+                            <param id="0" name="Variable">Platform</param>
+                            <param id="1" name="Value">random(0,4)</param>
+                        </action>
+                        <action disabled="1" id="-3" name="Create object" sid="922540622759391" type="System">
                             <param id="0" name="Object to create">Platform</param>
                             <param id="1" name="Layer">&quot;Game&quot;</param>
                             <param id="2" name="X">random(20, LayoutWidth - 40)</param>
                             <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
                         </action>
-                        <action id="-9" name="Set value" sid="560231996385133" type="System">
+                        <action disabled="1" id="-9" name="Set value" sid="933511677150805" type="System">
                             <param id="0" name="Variable">NextPlatform</param>
                             <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="248597234452898">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="465587067438750" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="455883321530270" type="System">
+                                    <param id="0" name="Object to create">Platform</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="188072694225746" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="974295629700180">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="730759637477125" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="419458815416464" type="System">
+                                    <param id="0" name="Object to create">Switch</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="588674495625521" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="731052886421709">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="828738903026439" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="284007045944699" type="System">
+                                    <param id="0" name="Object to create">Water</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="410804453717448" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="344567258340140">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="879842001336733" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="177534315571789" type="System">
+                                    <param id="0" name="Object to create">Fire</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="264589989595042" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="606056537529777">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="896195453747604" type="System">
+                                    <param id="0" name="Variable">Platform</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="303023720512671" type="System">
+                                    <param id="0" name="Object to create">Shock</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="967513181888560" type="System">
+                                    <param id="0" name="Variable">NextPlatform</param>
+                                    <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
