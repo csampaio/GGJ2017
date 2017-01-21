@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameEvents</name>
+    <events>
+        <variable constant="0" name="ScreenOffset" sid="854415207833270" static="0" type="number">0</variable>
+        <comment>This variable holds the current scroll position, which gets smaller as the player moves upwards.</comment>
+        <variable comment="The current scroll Y position" constant="0" name="MinScroll" sid="355734476877380" static="0" type="number">999</variable>
+        <comment>This variable holds the Y co-ordinate of the next platform to create.  When the top of the screen reaches that position, the platform is created.</comment>
+        <variable comment="The next Y scroll position to create a platform at" constant="0" name="NextPlatform" sid="671765888927778" static="0" type="number">0</variable>
+        <comment>If the player is above the scroll position, scroll up to the player&apos;s position.</comment>
+        <event-block sid="861613273212539">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="814249421576272" type="Player">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">MinScroll</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="166418354956275" type="System">
+                    <param id="0" name="Variable">MinScroll</param>
+                    <param id="1" name="Value">Player.Y - ScreenOffset</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>As we are scrolling, if the top of the screen has reached the position of the next platform to create, create it at a random position across the top of the screen.  Then also set another platform to be created at a random distance between 20 and 100 pixels up again.</comment>
+                <event-block sid="215072937150460">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="982469809802153" type="System">
+                            <param id="0" name="First value">NextPlatform</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">ViewportTop(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="167831373036314" type="System">
+                            <param id="0" name="Object to create">Platform</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="188691156217794" type="System">
+                            <param id="0" name="Variable">NextPlatform</param>
+                            <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="897353031980262">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="906267934803076" type="Player2">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">MinScroll</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="543138518957896" type="System">
+                    <param id="0" name="Variable">MinScroll</param>
+                    <param id="1" name="Value">Player2.Y - ScreenOffset</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>As we are scrolling, if the top of the screen has reached the position of the next platform to create, create it at a random position across the top of the screen.  Then also set another platform to be created at a random distance between 20 and 100 pixels up again.</comment>
+                <event-block sid="655880943511163">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="836632643395443" type="System">
+                            <param id="0" name="First value">NextPlatform</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">ViewportTop(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="326325793539033" type="System">
+                            <param id="0" name="Object to create">Platform</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">random(20, LayoutWidth - 40)</param>
+                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="560231996385133" type="System">
+                            <param id="0" name="Variable">NextPlatform</param>
+                            <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Always scroll to the current top position the player has reached, but never scroll horizontally.</comment>
+        <event-block sid="606766610064622">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="889910046302347" type="System" />
+            </conditions>
+            <actions>
+                <action id="-7" name="Scroll to position" sid="345252772126925" type="System">
+                    <param id="0" name="X">160</param>
+                    <param id="1" name="Y">MinScroll</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>As soon as the player lands, jump immediately.</comment>
+        <event-block any="1" sid="459411260690364">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="469070905660595" type="Player" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="920090423032114" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="502944909330676">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="428688339723299" type="Player2" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="227086714695686" type="Player2">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Use left and right arrow keys to control the player.  (This is necessary because the &apos;Default controls&apos; property has been set to &apos;No&apos; on the platform behavior, so we can automate jumping.)</comment>
+        <event-block sid="738862096986255">
+            <conditions>
+                <condition id="2" name="Key is down" sid="790319975467693" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="803070573001672" type="Player2">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538182242991430">
+            <conditions>
+                <condition id="2" name="Key is down" sid="322933254996094" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="984548344446291" type="Player2">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="688079914304608">
+            <conditions>
+                <condition id="2" name="Key is down" sid="993559199281854" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="874004233249358" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="381609010481057">
+            <conditions>
+                <condition id="2" name="Key is down" sid="232492698850614" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="679804854378280" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="760652155336514">
+            <conditions>
+                <condition id="2" name="Key is down" sid="822731283846061" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="720934560761486" type="Player2">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="627564955070787">
+            <conditions>
+                <condition id="2" name="Key is down" sid="635907025277350" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="212151645877609" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>On a mobile device, use the left-to-right tilt (Gamma) to also control movement.  This simply simulates pressing a control if the device has tilted enough to the left or right.</comment>
+        <event-block sid="835384789956792">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="635602895492177" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">-8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="587587965396594" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="235067752831476">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="332606765195637" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="754110316601960" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Destroy any platforms that go off the bottom of the screen so they don&apos;t keep using up memory and CPU and cause the game to slow down.</comment>
+        <event-block sid="707076478800236">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="444653601037444" type="Platform" />
+                <condition id="-2" name="Compare Y" sid="559337656270039" type="Platform">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="433784247382457" type="Platform" />
+            </actions>
+        </event-block>
+        <comment>If the player falls off the bottom of the screen, restart the layout.</comment>
+        <event-block sid="828631963738311">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="717337604788766" type="Player" />
+                <condition id="-2" name="Compare Y" sid="133191962785825" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="559523168773776" type="System" />
+                <action id="-26" name="Restart layout" sid="407054930380921" type="System" />
+            </actions>
+        </event-block>
+        <comment>Allow the player to wrap around to the left and right.</comment>
+        <event-block sid="519950811099770">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="239499956717095" type="Player">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">-10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="831403338069005" type="Player">
+                    <param id="0" name="X">LayoutWidth + 9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447637206519403">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="326581566013354" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">LayoutWidth + 10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="915101836023778" type="Player">
+                    <param id="0" name="X">-9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191766030194935">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="359936632026197" type="Player2">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">-10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="819459758058116" type="Player2">
+                    <param id="0" name="X">LayoutWidth + 9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="941236056576457">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="424120116106613" type="Player2">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">LayoutWidth + 10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="424680368223399" type="Player2">
+                    <param id="0" name="X">-9</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
