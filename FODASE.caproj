@@ -70,7 +70,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="632938635484160" speed="5">
-                    <frame duration="1" hotspotX="0.512195" hotspotY="1">
+                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_platform.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -147,7 +147,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403619193338319" speed="5">
-                    <frame duration="1" hotspotX="0.512195" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Animations\Platform\Default\água.png">
+                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_platform_water.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -171,7 +171,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311699981172097" speed="5">
-                    <frame duration="1" hotspotX="0.512195" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Animations\Platform\Default\fogo.png">
+                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_platform_fire.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -195,7 +195,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438740031618062" speed="5">
-                    <frame duration="1" hotspotX="0.512195" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Animations\Platform\Default\elec.png">
+                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_platform_light.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -212,6 +212,14 @@
         </object-type>
         <object-type name="Text2" sid="904295788549358">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="526047104698460">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522788365295918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_bg.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

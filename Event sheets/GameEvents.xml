@@ -64,6 +64,23 @@
                                     <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block any="1" sid="892334504041311">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="130230691439297" type="Switch">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                        <condition id="0" name="On collision with another object" sid="280595037158304" type="Switch">
+                                            <param id="0" name="Object">Player2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="253441816377546" type="Switch">
+                                            <param id="0" name="Opacity">50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block any="1" sid="502944909330676">
                             <conditions>
@@ -74,6 +91,23 @@
                                     <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block any="1" sid="698612356388640">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="535560553403504" type="Switch">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                        <condition id="0" name="On collision with another object" sid="250331482621614" type="Switch">
+                                            <param id="0" name="Object">Player2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="782564995379292" type="Switch">
+                                            <param id="0" name="Opacity">50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="738862096986255">
                             <conditions>
