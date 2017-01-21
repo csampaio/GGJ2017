@@ -114,13 +114,20 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Creditos" sid="461183890632569">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Game.xml</layout>
+        <layout>StartMenu.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GameEvents.xml</event-sheet>
+        <event-sheet>MenuEvents.xml</event-sheet>
+        <event-sheet>CreditsEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="23">

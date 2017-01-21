@@ -13,10 +13,28 @@
     </margins>
     <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
+        <layer name="Background" sid="406867578938366">
+            <initially-visible>1</initially-visible>
+            <background-color>153,204,204</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
         <layer name="Game" sid="952948136781913">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
-            <transparent>0</transparent>
+            <transparent>1</transparent>
             <parallax>
                 <x>1</x>
                 <y>1</y>
@@ -700,13 +718,13 @@
                         </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
+                    <effect-fallback>4</effect-fallback>
                     <world>
                         <x>245.864776611</x>
                         <y>334.526153564</y>
                         <z>0</z>
-                        <width>23.822568893</width>
-                        <height>33.748638153</height>
+                        <width>24</width>
+                        <height>34</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -748,8 +766,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2</x>
-                        <y>459</y>
+                        <x>0.346984863</x>
+                        <y>684.619140625</y>
                         <z>0</z>
                         <width>315</width>
                         <height>30</height>
