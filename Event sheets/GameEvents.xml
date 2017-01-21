@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable comment="0 - Left, 1 - Right, 2 - Both" constant="0" name="SpawnPoint" sid="824367900569576" static="0" type="number">0</variable>
+        <variable constant="0" name="PlatformSpaceMin" sid="398152643928403" static="0" type="number">30</variable>
+        <variable constant="0" name="PlatformSpaceMax" sid="165133349563425" static="0" type="number">130</variable>
         <variable constant="0" name="MaxHeight" sid="299027740710044" static="0" type="number">360</variable>
         <variable constant="0" name="PlatformR" sid="737699132056232" static="0" type="number">0</variable>
         <variable constant="0" name="PlatformL" sid="694924038500506" static="0" type="number">0</variable>
@@ -224,194 +227,232 @@
                                 <action id="0" name="Set text" sid="946766770795297" type="Text2">
                                     <param id="0" name="Text">PlatformR</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="665089690437124" type="System">
+                                    <param id="0" name="Variable">SpawnPoint</param>
+                                    <param id="1" name="Value">int(random(0,2.99))</param>
+                                </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="800172092041870">
+                                <event-block any="1" sid="937011282180855">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="673549761113305" type="System">
-                                            <param id="0" name="Variable">PlatformR</param>
-                                            <param id="1" name="Comparison">5</param>
+                                        <condition id="-14" name="Compare variable" sid="969474028280191" type="System">
+                                            <param id="0" name="Variable">SpawnPoint</param>
+                                            <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="127511557955113" type="System">
-                                            <param id="0" name="Variable">PlatformR</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">5</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="488449246054555" type="System">
-                                            <param id="0" name="Object to create">Platform</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random(20, (WindowWidth/2) - Platform.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="989427304548931">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="793396115552572" type="System">
-                                            <param id="0" name="Variable">PlatformR</param>
+                                        <condition id="-14" name="Compare variable" sid="112054780084763" type="System">
+                                            <param id="0" name="Variable">SpawnPoint</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="852345445339970" type="System">
-                                            <param id="0" name="Object to create">Switch</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random(20, (WindowWidth/2) - Platform.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="800172092041870">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="673549761113305" type="System">
+                                                    <param id="0" name="Variable">PlatformR</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="127511557955113" type="System">
+                                                    <param id="0" name="Variable">PlatformR</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="488449246054555" type="System">
+                                                    <param id="0" name="Object to create">Platform</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random(20, (WindowWidth/2) - Platform.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="989427304548931">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="793396115552572" type="System">
+                                                    <param id="0" name="Variable">PlatformR</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="852345445339970" type="System">
+                                                    <param id="0" name="Object to create">Switch</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random(20, (WindowWidth/2) - Platform.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="317849481865143">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="547641518077911" type="System">
+                                                    <param id="0" name="Variable">PlatformR</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="881409248839936" type="System">
+                                                    <param id="0" name="Object to create">Water</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random(20, (WindowWidth/2) - Water.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="177462673256276">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="210259699495134" type="System">
+                                                    <param id="0" name="Variable">PlatformR</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="412203776257808" type="System">
+                                                    <param id="0" name="Object to create">Fire</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random(20, (WindowWidth/2) - Fire.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="828021181151699">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="740928308206168" type="System">
+                                                    <param id="0" name="Variable">PlatformR</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="800582530075659" type="System">
+                                                    <param id="0" name="Object to create">Shock</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random(20, (WindowWidth/2) - Shock.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                                <event-block sid="317849481865143">
+                                <event-block any="1" sid="222565625714414">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="547641518077911" type="System">
-                                            <param id="0" name="Variable">PlatformR</param>
+                                        <condition id="-14" name="Compare variable" sid="832247348579253" type="System">
+                                            <param id="0" name="Variable">SpawnPoint</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">7</param>
+                                            <param id="2" name="Value">1</param>
                                         </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="881409248839936" type="System">
-                                            <param id="0" name="Object to create">Water</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random(20, (WindowWidth/2) - Water.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="177462673256276">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="210259699495134" type="System">
-                                            <param id="0" name="Variable">PlatformR</param>
+                                        <condition id="-14" name="Compare variable" sid="278066717710765" type="System">
+                                            <param id="0" name="Variable">SpawnPoint</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">8</param>
+                                            <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="412203776257808" type="System">
-                                            <param id="0" name="Object to create">Fire</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random(20, (WindowWidth/2) - Fire.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="828021181151699">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="740928308206168" type="System">
-                                            <param id="0" name="Variable">PlatformR</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">9</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="800582530075659" type="System">
-                                            <param id="0" name="Object to create">Shock</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random(20, (WindowWidth/2) - Shock.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,10)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="934043331150662">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="305122616958520" type="System">
-                                            <param id="0" name="Variable">PlatformL</param>
-                                            <param id="1" name="Comparison">5</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="125902028436852" type="System">
-                                            <param id="0" name="Variable">PlatformL</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">5</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="195454318793309" type="System">
-                                            <param id="0" name="Object to create">Platform</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random((WindowWidth/2) +(Platform.Width/2) , WindowWidth - Platform.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="224202076575588">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="579280697006417" type="System">
-                                            <param id="0" name="Variable">PlatformL</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">6</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="397027633288604" type="System">
-                                            <param id="0" name="Object to create">Switch</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random((WindowWidth/2) +(Switch.Width/2) , WindowWidth - Switch.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="416910003864529">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="373766535127774" type="System">
-                                            <param id="0" name="Variable">PlatformL</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">7</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="716571584695906" type="System">
-                                            <param id="0" name="Object to create">Water</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random((WindowWidth/2) +(Water.Width/2) , WindowWidth - Water.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="846598911352532">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="918177512149762" type="System">
-                                            <param id="0" name="Variable">PlatformL</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">8</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="224973562178593" type="System">
-                                            <param id="0" name="Object to create">Fire</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random((WindowWidth/2) +(Fire.Width/2) , WindowWidth - Fire.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="713646337606177">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="835814667132858" type="System">
-                                            <param id="0" name="Variable">PlatformL</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">9</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="283045486658223" type="System">
-                                            <param id="0" name="Object to create">Shock</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="X">random((WindowWidth/2) +(Shock.Width/2) , WindowWidth - Shock.Width)</param>
-                                            <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="934043331150662">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="305122616958520" type="System">
+                                                    <param id="0" name="Variable">PlatformL</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="125902028436852" type="System">
+                                                    <param id="0" name="Variable">PlatformL</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="195454318793309" type="System">
+                                                    <param id="0" name="Object to create">Platform</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random((WindowWidth/2) +(Platform.Width/2) , WindowWidth - Platform.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="224202076575588">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="579280697006417" type="System">
+                                                    <param id="0" name="Variable">PlatformL</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="397027633288604" type="System">
+                                                    <param id="0" name="Object to create">Switch</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random((WindowWidth/2) +(Switch.Width/2) , WindowWidth - Switch.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="416910003864529">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="373766535127774" type="System">
+                                                    <param id="0" name="Variable">PlatformL</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="716571584695906" type="System">
+                                                    <param id="0" name="Object to create">Water</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random((WindowWidth/2) +(Water.Width/2) , WindowWidth - Water.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="846598911352532">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="918177512149762" type="System">
+                                                    <param id="0" name="Variable">PlatformL</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="224973562178593" type="System">
+                                                    <param id="0" name="Object to create">Fire</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random((WindowWidth/2) +(Fire.Width/2) , WindowWidth - Fire.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="713646337606177">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="835814667132858" type="System">
+                                                    <param id="0" name="Variable">PlatformL</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="283045486658223" type="System">
+                                                    <param id="0" name="Object to create">Shock</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">random((WindowWidth/2) +(Shock.Width/2) , WindowWidth - Shock.Width)</param>
+                                                    <param id="3" name="Y">ViewportTop(&quot;Game&quot;) + random(0,15)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="224201684434864">
                                     <conditions />
                                     <actions>
                                         <action id="-9" name="Set value" sid="381809434510974" type="System">
                                             <param id="0" name="Variable">NextPlatform</param>
-                                            <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(20, 100)</param>
+                                            <param id="1" name="Value">ViewportTop(&quot;Game&quot;) - random(PlatformSpaceMin, PlatformSpaceMax)</param>
                                         </action>
                                     </actions>
                                 </event-block>
