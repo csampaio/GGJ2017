@@ -198,8 +198,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>100</x>
-                        <y>349</y>
+                        <x>360</x>
+                        <y>325</y>
                         <z>0</z>
                         <width>100</width>
                         <height>30</height>
@@ -430,8 +430,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>339</x>
-                        <y>246</y>
+                        <x>231</x>
+                        <y>107</y>
                         <z>0</z>
                         <width>100</width>
                         <height>30</height>
@@ -459,8 +459,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>98</x>
-                        <y>228</y>
+                        <x>100</x>
+                        <y>131</y>
                         <z>0</z>
                         <width>105</width>
                         <height>60</height>
@@ -520,8 +520,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>234</x>
-                        <y>394</y>
+                        <x>239</x>
+                        <y>398</y>
                         <z>0</z>
                         <width>74</width>
                         <height>29</height>
@@ -539,6 +539,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -549,8 +552,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>156</x>
-                        <y>106</y>
+                        <x>118</x>
+                        <y>317</y>
                         <z>0</z>
                         <width>105</width>
                         <height>60</height>
@@ -591,7 +594,7 @@
                         <y>-80</y>
                         <z>0</z>
                         <width>38.5</width>
-                        <height>77</height>
+                        <height>57.75</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -629,8 +632,8 @@
                         <behavior-instance type="Platform">
                             <properties>
                                 <max-speed>300</max-speed>
-                                <acceleration>3000</acceleration>
-                                <deceleration>4000</deceleration>
+                                <acceleration>4000</acceleration>
+                                <deceleration>3000</deceleration>
                                 <jump-strength>600</jump-strength>
                                 <gravity>1350</gravity>
                                 <max-fall-speed>1000</max-fall-speed>

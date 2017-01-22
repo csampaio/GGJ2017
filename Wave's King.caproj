@@ -11,6 +11,7 @@
     <saved-with-version>24100</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -228,6 +229,9 @@
         </object-type>
         <object-type name="Water" sid="542343955293701">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="On" sid="160168126615144" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Jumpthru" sid="310417167127653">
                     <behavior id="jumpthru" />
@@ -1018,6 +1022,9 @@
         <object-type name="RestartBtn" sid="389260637364955">
             <plugin id="Button" />
         </object-type>
+        <object-type name="Function" sid="370611982838027">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1033,6 +1040,7 @@
             </properties>
         </global-instance>
         <global-instance type="Keyboard" uid="24" />
+        <global-instance type="Function" uid="19" />
     </global-instances>
     <sounds-folder />
     <music-folder />

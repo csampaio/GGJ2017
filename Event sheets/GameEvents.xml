@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable constant="0" name="PlayerDBuffTime" sid="562488334915952" static="0" type="number">2</variable>
         <variable constant="0" name="Restart" sid="624474947293261" static="0" type="number">0</variable>
         <variable comment="Check if some player died" constant="0" name="PlayerDie" sid="626484144385223" static="0" type="number">0</variable>
         <variable constant="0" name="CurrentPos" sid="703536182818335" static="0" type="number">0</variable>
@@ -60,7 +61,7 @@
             <actions>
                 <action id="-11" name="Add to" sid="634065758124839" type="WaveWater">
                     <param id="0" name="Instance variable">Scale</param>
-                    <param id="1" name="Value">0.01</param>
+                    <param id="1" name="Value">0.075</param>
                 </action>
                 <action id="9" name="Set scale" sid="978258637078278" type="WaveWater">
                     <param id="0" name="Scale">Self.Scale</param>
@@ -87,8 +88,94 @@
         </event-block>
         <event-group description="" sid="386512493300715" title="Player">
             <sub-events>
+                <event-group description="" sid="907285754952579" title="Hit">
+                    <sub-events>
+                        <event-block sid="108626936531541">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="181050604192738" type="Water">
+                                    <param id="0" name="Instance variable">On</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="792981150341130">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="562135901995115" type="Player">
+                                            <param id="0" name="Object">Water</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="539136591263356" type="Player">
+                                            <param id="0" name="Animation">&quot;Watter&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="149735712830062" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="867438015847036" type="Player">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="862007387840112" title="Controll">
                     <sub-events>
+                        <event-block sid="519950811099770">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="239499956717095" type="Player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">-10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="831403338069005" type="Player">
+                                    <param id="0" name="X">LayoutWidth + 9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="447637206519403">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="326581566013354" type="Player">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">LayoutWidth + 10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="915101836023778" type="Player">
+                                    <param id="0" name="X">-9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="191766030194935">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="359936632026197" type="Player2">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">-10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="819459758058116" type="Player2">
+                                    <param id="0" name="X">LayoutWidth + 9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="941236056576457">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="424120116106613" type="Player2">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">LayoutWidth + 10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="424680368223399" type="Player2">
+                                    <param id="0" name="X">-9</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="835384789956792">
                             <conditions>
                                 <condition id="8" name="Compare orientation" sid="635602895492177" type="Touch">
@@ -137,7 +224,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="892334504041311">
+                                <event-block sid="958031268345904">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="130230691439297" type="Switch">
                                             <param id="0" name="Object">Player</param>
@@ -147,43 +234,13 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Spawn another object" sid="657500780018519" type="Switch">
-                                            <param id="0" name="Object">WaveWater</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="Image point">0</param>
+                                        <action id="0" name="Call function" sid="350735468776435" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="852176940011424" type="WaveWater">
-                                            <param id="0" name="Angle">270</param>
-                                        </action>
-                                        <action id="9" name="Set scale" sid="527108032995374" type="WaveWater">
-                                            <param id="0" name="Scale">Self.Scale</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="628568919570751" type="WaveWater">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="-13" name="Set boolean" sid="216857529274905" type="WaveWater">
-                                            <param id="0" name="Instance variable">IsOn</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action behavior="Bullet" id="5" name="Set enabled" sid="229325607383163" type="WaveWater">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                        <action id="-13" name="Set boolean" sid="506787167273789" type="Switch">
-                                            <param id="0" name="Instance variable">On</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="5" name="Set frame" sid="253441816377546" type="Switch">
-                                            <param id="0" name="Frame number">1</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="858814630257184" type="System">
-                                            <param id="0" name="Seconds">SwitchTime</param>
-                                        </action>
-                                        <action id="5" name="Set frame" sid="107674550988279" type="Switch">
-                                            <param id="0" name="Frame number">0</param>
-                                        </action>
-                                        <action id="-13" name="Set boolean" sid="489122287750055" type="Switch">
-                                            <param id="0" name="Instance variable">On</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="0" name="Call function" sid="996991610874716" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -213,22 +270,13 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-13" name="Set boolean" sid="985066009758790" type="Switch">
-                                            <param id="0" name="Instance variable">On</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="505353991176887" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="5" name="Set frame" sid="741037597766059" type="Switch">
-                                            <param id="0" name="Frame number">1</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="195710251467488" type="System">
-                                            <param id="0" name="Seconds">SwitchTime</param>
-                                        </action>
-                                        <action id="5" name="Set frame" sid="578317114786660" type="Switch">
-                                            <param id="0" name="Frame number">0</param>
-                                        </action>
-                                        <action id="-13" name="Set boolean" sid="856286000242591" type="Switch">
-                                            <param id="0" name="Instance variable">On</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="0" name="Call function" sid="217172504658868" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -296,58 +344,6 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block sid="519950811099770">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="239499956717095" type="Player">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">-10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="831403338069005" type="Player">
-                            <param id="0" name="X">LayoutWidth + 9</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="447637206519403">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="326581566013354" type="Player">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">LayoutWidth + 10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="915101836023778" type="Player">
-                            <param id="0" name="X">-9</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="191766030194935">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="359936632026197" type="Player2">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">-10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="819459758058116" type="Player2">
-                            <param id="0" name="X">LayoutWidth + 9</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="941236056576457">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="424120116106613" type="Player2">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">LayoutWidth + 10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="424680368223399" type="Player2">
-                            <param id="0" name="X">-9</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="264361484582867" title="Camera">
@@ -650,18 +646,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="707076478800236">
-            <conditions>
-                <condition id="-3" inverted="1" name="Is on-screen" sid="444653601037444" type="Platform" />
-                <condition id="-2" name="Compare Y" sid="559337656270039" type="Platform">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="433784247382457" type="Platform" />
-            </actions>
-        </event-block>
         <event-group description="" sid="780521562292076" title="Winning">
             <sub-events>
                 <event-block sid="828631963738311">
@@ -821,5 +805,77 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="344528050853309" title="Platforms">
+            <sub-events>
+                <event-block sid="707076478800236">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="444653601037444" type="Platform" />
+                        <condition id="-2" name="Compare Y" sid="559337656270039" type="Platform">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="433784247382457" type="Platform" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="235540715487869">
+            <conditions>
+                <condition id="0" name="On function" sid="231677377310933" type="Function">
+                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="706697443939031" type="Switch">
+                    <param id="0" name="Instance variable">On</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="786608836343071" type="Switch">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="888484765848194" type="System">
+                    <param id="0" name="Seconds">SwitchTime</param>
+                </action>
+                <action id="5" name="Set frame" sid="130077614259183" type="Switch">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="451321591006394" type="Switch">
+                    <param id="0" name="Instance variable">On</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="583545570312794">
+            <conditions>
+                <condition id="0" name="On function" sid="296583585704922" type="Function">
+                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="995360205691024" type="Switch">
+                    <param id="0" name="Object">WaveWater</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="270256076147023" type="WaveWater">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="9" name="Set scale" sid="436533824563855" type="WaveWater">
+                    <param id="0" name="Scale">Self.Scale</param>
+                </action>
+                <action id="-15" name="Set visible" sid="846332333657269" type="WaveWater">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="723762681318041" type="WaveWater">
+                    <param id="0" name="Instance variable">IsOn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="110099856132609" type="WaveWater">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
