@@ -1632,6 +1632,54 @@
                         <action id="-9" name="Destroy" sid="433784247382457" type="Platform" />
                     </actions>
                 </event-block>
+                <event-block sid="671111768452784">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="622841290013556" type="Fire" />
+                        <condition id="-2" name="Compare Y" sid="201316406684063" type="Fire">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="177937426766263" type="Fire" />
+                    </actions>
+                </event-block>
+                <event-block sid="167404415640779">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="191187874549567" type="Water" />
+                        <condition id="-2" name="Compare Y" sid="640616495128022" type="Water">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="187092927468010" type="Water" />
+                    </actions>
+                </event-block>
+                <event-block sid="940593012424066">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="770152086674129" type="Shock" />
+                        <condition id="-2" name="Compare Y" sid="785634693189824" type="Shock">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="938747178114866" type="Shock" />
+                    </actions>
+                </event-block>
+                <event-block sid="570218868397361">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="131527053869606" type="Switch" />
+                        <condition id="-2" name="Compare Y" sid="239218385538335" type="Switch">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="693346279584950" type="Switch" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="964901098802789" title="Functions">
