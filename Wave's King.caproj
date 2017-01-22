@@ -1725,6 +1725,9 @@
         <object-type name="Function" sid="370611982838027">
             <plugin id="Function" />
         </object-type>
+        <object-type name="Text" sid="722765126875239">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
