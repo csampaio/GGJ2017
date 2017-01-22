@@ -16,11 +16,11 @@
         <variable comment="0 - Left, 1 - Right, 2 - Both" constant="0" name="SpawnPoint" sid="824367900569576" static="0" type="number">0</variable>
         <variable constant="0" name="PlatformSpaceMin" sid="398152643928403" static="0" type="number">50</variable>
         <variable constant="0" name="PlatformSpaceMax" sid="165133349563425" static="0" type="number">110</variable>
-        <variable constant="0" name="MaxHeight" sid="299027740710044" static="0" type="number">360</variable>
+        <variable constant="0" name="MaxHeight" sid="299027740710044" static="0" type="number">720</variable>
         <variable constant="0" name="PlatformR" sid="737699132056232" static="0" type="number">0</variable>
         <variable constant="0" name="PlatformL" sid="694924038500506" static="0" type="number">0</variable>
-        <variable constant="0" name="ScreenOffset" sid="854415207833270" static="0" type="number">0</variable>
-        <variable comment="The current scroll Y position" constant="0" name="MinScroll" sid="355734476877380" static="0" type="number">400</variable>
+        <variable constant="0" name="ScreenOffset" sid="854415207833270" static="0" type="number">280</variable>
+        <variable comment="The current scroll Y position" constant="0" name="MinScroll" sid="355734476877380" static="0" type="number">1000</variable>
         <variable comment="The next Y scroll position to create a platform at" constant="0" name="NextPlatform" sid="671765888927778" static="0" type="number">0</variable>
         <event-block sid="138213796248457">
             <conditions>
@@ -61,7 +61,7 @@
             <actions>
                 <action id="-11" name="Add to" sid="634065758124839" type="WaveWater">
                     <param id="0" name="Instance variable">Scale</param>
-                    <param id="1" name="Value">0.075</param>
+                    <param id="1" name="Value">0.08</param>
                 </action>
                 <action id="9" name="Set scale" sid="978258637078278" type="WaveWater">
                     <param id="0" name="Scale">Self.Scale</param>
@@ -619,7 +619,7 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="761524652699989" type="System">
                                     <param id="0" name="Variable">MinScroll</param>
-                                    <param id="1" name="Value">Player.Y - ScreenOffset</param>
+                                    <param id="1" name="Value">Player.Y + ScreenOffset</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="407564481898597" type="System">
                                     <param id="0" name="Variable">MaxHeight</param>
@@ -634,7 +634,7 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="690892274518410" type="System">
                                     <param id="0" name="Variable">MinScroll</param>
-                                    <param id="1" name="Value">Player2.Y - ScreenOffset</param>
+                                    <param id="1" name="Value">Player2.Y + ScreenOffset</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="833566699193913" type="System">
                                     <param id="0" name="Variable">MaxHeight</param>

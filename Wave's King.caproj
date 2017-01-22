@@ -53,57 +53,372 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432172499644252" speed="8">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="15" loop="1" name="Watter" pingpong="0" repeatcount="1" repeatto="0" sid="887519294066183" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00000.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00002.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00003.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00004.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00005.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00006.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00007.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00008.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00009.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00010.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00011.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00012.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00013.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00014.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="6" loop="1" name="Fire" pingpong="0" repeatcount="1" repeatto="0" sid="528693184921358" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00000.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00002.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00003.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00004.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00005.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="23" loop="1" name="Shock" pingpong="0" repeatcount="1" repeatto="0" sid="706521646857947" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00014.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00015.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00016.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00017.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00018.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00019.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00020.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00021.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00000.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00002.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00003.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00004.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00005.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00006.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00007.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00008.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00009.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00010.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00011.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00012.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00013.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00014.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00015.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00016.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00017.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00018.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00019.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00020.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00021.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00022.png">
+                        <collision-poly>
+                            <point x="0" y="0.647059" />
+                            <point x="0.515625" y="0.635294" />
+                            <point x="0.515625" y="0.847059" />
+                            <point x="0" y="0.847059" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -146,67 +461,452 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752386155480429" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\jump.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\jump.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="30" loop="1" name="Watter" pingpong="0" repeatcount="1" repeatto="0" sid="543828200798625" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00014.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00015.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00016.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00017.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00018.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00019.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00020.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00021.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00022.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00023.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00024.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00025.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00026.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00027.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00028.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00000.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00001.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00002.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00003.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00004.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00005.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00006.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00007.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00008.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00009.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00010.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00011.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00012.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00013.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00014.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00015.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00016.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00017.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00018.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00019.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00020.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00021.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00022.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00023.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00024.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00025.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00026.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00027.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00028.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00029.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="1" name="Fire" pingpong="0" repeatcount="1" repeatto="0" sid="313295169514015" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_fogo\seq_persona_p3_fogo_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_fogo\seq_persona_p3_fogo_00004.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="23" loop="1" name="Shock" pingpong="0" repeatcount="1" repeatto="0" sid="169721931736889" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00014.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00015.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00016.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00017.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00018.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00019.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00020.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00021.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00000.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00001.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00002.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00003.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00004.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00005.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00006.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00007.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00008.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00009.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00010.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00011.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00012.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00013.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00014.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00015.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00016.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00017.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00018.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00019.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00020.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00021.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00022.png">
+                        <collision-poly>
+                            <point x="0.078125" y="0.635294" />
+                            <point x="0.703125" y="0.647059" />
+                            <point x="0.671875" y="0.811765" />
+                            <point x="0.046875" y="0.823529" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
