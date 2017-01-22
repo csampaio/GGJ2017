@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -33,6 +34,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>StartMenu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1956,13 +1958,114 @@
         <object-type name="Audio" sid="342227748821016">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Sprite" sid="435227035799403">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="685979098215290" speed="5">
+                    <frame duration="1" hotspotX="0.500524" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\Menu\img_start_menu_OK.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="960610589165006">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718998259380793" speed="5">
+                    <frame duration="1" hotspotX="0.500524" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\Menu\img_credits.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartBtn" sid="601712478972664">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="152598244098060" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\Menu\img_star_menu.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Start" pingpong="0" repeatcount="1" repeatto="0" sid="410712434003539" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Credits" pingpong="0" repeatcount="1" repeatto="0" sid="924236077034420" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bg" sid="757921800460502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244251756560449" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\Menu\img_start_480x720.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Start" sid="232305731567443">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747598225346432" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Credits" sid="457323119672365">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492969454491070" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="598398773273491">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="bgcredits" sid="882043106452106">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435381988980832" speed="5">
+                    <frame duration="1" hotspotX="0.500524" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\Menu\img_credits.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backbtn" sid="383277099258820">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562726462367882" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.502994" original-source="E:\projetos\GGJ2017\Assets\Menu\img-botao-voltar.png">
+                        <collision-poly>
+                            <point x="0.0353982" y="0.502994" />
+                            <point x="0.0707965" y="0.0479042" />
+                            <point x="0.495575" y="0.155689" />
+                            <point x="0.663717" y="0.227545" />
+                            <point x="1" y="0.502994" />
+                            <point x="0.646018" y="0.760479" />
+                            <point x="0.495575" y="0.850299" />
+                            <point x="0.0442478" y="0.97006" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Over" pingpong="0" repeatcount="1" repeatto="0" sid="517167043700642" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.502994">
+                        <collision-poly>
+                            <point x="0.964602" y="0.497006" />
+                            <point x="0.929204" y="0.952096" />
+                            <point x="0.504425" y="0.844311" />
+                            <point x="0.336283" y="0.772455" />
+                            <point x="0" y="0.497006" />
+                            <point x="0.353982" y="0.239521" />
+                            <point x="0.504425" y="0.149701" />
+                            <point x="0.955752" y="0.0299401" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Game.xml</layout>
+        <layout>StartMenu.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GameEvents.xml</event-sheet>
+        <event-sheet>MenuEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="23">
@@ -1986,6 +2089,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="45" />
     </global-instances>
     <sounds-folder>
         <file name="Agua - Ativacao plataforma2.m4a" />
