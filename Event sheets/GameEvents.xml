@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable constant="0" name="TurnOnSwitch" sid="683383483968277" static="0" type="number">0</variable>
         <variable comment="0 - água / 1 - fogo / 2 - elet" constant="0" name="SwitchType" sid="208789106138632" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerDBuffTime" sid="562488334915952" static="0" type="number">2</variable>
         <variable constant="0" name="Restart" sid="624474947293261" static="0" type="number">0</variable>
@@ -133,58 +134,80 @@
         </event-block>
         <event-group description="" sid="386512493300715" title="Player">
             <sub-events>
-                <event-group description="" sid="907285754952579" title="Hit">
+                <event-group description="" sid="620211648871486" title="DBuff">
                     <sub-events>
-                        <event-block sid="378304748056256">
+                        <event-block sid="884477025037254">
                             <conditions>
-                                <condition id="2" name="Is playing" sid="891956411702422" type="Water">
-                                    <param id="0" name="Animation">&quot;On&quot;</param>
+                                <condition id="-8" name="Is boolean instance variable set" sid="875144792268303" type="Player">
+                                    <param id="0" name="Instance variable">WatterBuff</param>
                                 </condition>
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="253968709698670">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="777068498553968" type="Player">
-                                            <param id="0" name="Object">Water</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="4" name="Set animation" sid="234275105288888" type="Player">
-                                            <param id="0" name="Animation">&quot;Watter&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="821037158144848" type="System">
-                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
-                                        </action>
-                                        <action id="4" name="Set animation" sid="524809249881578" type="Player">
-                                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="486379110512124">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="826302992221977" type="Player2">
-                                            <param id="0" name="Object">Water</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="4" name="Set animation" sid="340581458251970" type="Player2">
-                                            <param id="0" name="Animation">&quot;Watter&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="682968409493751" type="System">
-                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
-                                        </action>
-                                        <action id="4" name="Set animation" sid="926408136891822" type="Player2">
-                                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="494703278344481" type="Player">
+                                    <param id="0" name="Jump strength">500</param>
+                                </action>
+                            </actions>
                         </event-block>
+                        <event-block sid="714683578302899">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="875060099734269" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="799322689731805" type="Player">
+                                    <param id="0" name="Jump strength">600</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="508224052377269">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="876342836833341" type="Player2">
+                                    <param id="0" name="Instance variable">WatterBuff</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="679538073038971" type="Player2">
+                                    <param id="0" name="Jump strength">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962388539678826">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="892731839033970" type="Player">
+                                    <param id="0" name="Instance variable">FireBuff</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="997699739437024" type="Player">
+                                    <param id="0" name="Jump strength">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962304939304215">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="100173196561969" type="Player2">
+                                    <param id="0" name="Instance variable">FireBuff</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="672784430756750" type="Player2">
+                                    <param id="0" name="Jump strength">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="841674569093902">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="691990354202850" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="214611114204516" type="Player2">
+                                    <param id="0" name="Jump strength">600</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="907285754952579" title="Hit">
+                    <sub-events>
                         <event-block sid="303683236761218">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="377822606678495" type="Water">
@@ -200,6 +223,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-13" name="Set boolean" sid="868799155434002" type="Player">
+                                            <param id="0" name="Instance variable">WatterBuff</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                         <action id="4" name="Set animation" sid="609115285096072" type="Player">
                                             <param id="0" name="Animation">&quot;Fire&quot;</param>
                                             <param id="1" name="From">1</param>
@@ -211,6 +238,10 @@
                                             <param id="0" name="Animation">&quot;Default&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
+                                        <action id="-13" name="Set boolean" sid="218774516328390" type="Player">
+                                            <param id="0" name="Instance variable">WatterBuff</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="125303252672294">
@@ -220,6 +251,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-13" name="Set boolean" sid="620128890283557" type="Player2">
+                                            <param id="0" name="Instance variable">WatterBuff</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                         <action id="4" name="Set animation" sid="180478632562730" type="Player2">
                                             <param id="0" name="Animation">&quot;Fire&quot;</param>
                                             <param id="1" name="From">1</param>
@@ -230,6 +265,10 @@
                                         <action id="4" name="Set animation" sid="898804689953665" type="Player2">
                                             <param id="0" name="Animation">&quot;Default&quot;</param>
                                             <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="521909146114418" type="Player2">
+                                            <param id="0" name="Instance variable">WatterBuff</param>
+                                            <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -514,34 +553,6 @@
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block disabled="1" sid="958031268345904">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="130230691439297" type="Switch">
-                                            <param id="0" name="Object">Player</param>
-                                        </condition>
-                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="348941702923236" type="Switch">
-                                            <param id="0" name="Instance variable">On</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="350735468776435" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="996991610874716" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Play" sid="570074917463266" type="Audio">
-                                            <param id="0" name="Audio file">Switch - On</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                         <event-block any="1" sid="502944909330676">
                             <conditions>
@@ -562,34 +573,6 @@
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block disabled="1" sid="698612356388640">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="250331482621614" type="Switch">
-                                            <param id="0" name="Object">Player2</param>
-                                        </condition>
-                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="209245223239248" type="Switch">
-                                            <param id="0" name="Instance variable">On</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="505353991176887" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="217172504658868" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Play" sid="302319066045349" type="Audio">
-                                            <param id="0" name="Audio file">Switch - On</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                         <event-block sid="738862096986255">
                             <conditions>
@@ -597,14 +580,37 @@
                                     <param id="0" name="Key">37 (Left arrow)</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="803070573001672" type="Player2">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="291313923920093" type="Player2">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="422666634602301">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="341158575280396" type="Player2">
+                                            <param id="0" name="Instance variable">ShockBuff</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="787438162673462" type="Player2">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="830115696060094" type="Player2">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="764572539111506">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="745790266025624" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="803070573001672" type="Player2">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="291313923920093" type="Player2">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="538182242991430">
                             <conditions>
@@ -612,14 +618,37 @@
                                     <param id="0" name="Key">39 (Right arrow)</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="984548344446291" type="Player2">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="560331732245484" type="Player2">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="441165537856014">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="978405372397530" type="Player2">
+                                            <param id="0" name="Instance variable">ShockBuff</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="984548344446291" type="Player2">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="560331732245484" type="Player2">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="215757420279675">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="462739248780070" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="780601297593083" type="Player2">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="114152837143596" type="Player2">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="688079914304608">
                             <conditions>
@@ -627,14 +656,37 @@
                                     <param id="0" name="Key">65 (A)</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="874004233249358" type="Player">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="246612616659458" type="Player">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="836493497776650">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="569273296040101" type="Player">
+                                            <param id="0" name="Instance variable">ShockBuff</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="874004233249358" type="Player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="246612616659458" type="Player">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="244865050777300">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="450318403186905" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="775358245590405" type="Player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="275754954298779" type="Player">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="381609010481057">
                             <conditions>
@@ -642,14 +694,37 @@
                                     <param id="0" name="Key">68 (D)</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="679804854378280" type="Player">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="378556556214672" type="Player">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="809848300486706">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="496415857227046" type="Player">
+                                            <param id="0" name="Instance variable">ShockBuff</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="679804854378280" type="Player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="378556556214672" type="Player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="266826621367003">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="542594050445894" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="840719215197132" type="Player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="475346684598070" type="Player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -1392,88 +1467,112 @@
         </event-group>
         <event-group description="" sid="542428438277221" title="Switch">
             <sub-events>
-                <event-block any="1" sid="794595719504783">
+                <event-block sid="804137240757724">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="469912419151773" type="Switch">
+                        <condition id="0" name="On collision with another object" sid="457010967675487" type="Switch">
                             <param id="0" name="Object">Player</param>
                         </condition>
-                        <condition id="0" name="On collision with another object" sid="313722151384842" type="Switch">
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="820859614924679" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="938969464658330" type="System">
+                            <param id="0" name="Variable">TurnOnSwitch</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="573831892386187">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="448648265438919" type="Switch">
                             <param id="0" name="Object">Player2</param>
                         </condition>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="293851522991358" type="Player2" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="764527230842606" type="System">
+                            <param id="0" name="Variable">TurnOnSwitch</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="707784497834769">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="752654368681603" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="828222818883150" type="System">
+                            <param id="0" name="Variable">TurnOnSwitch</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="534922319549464" type="System">
+                            <param id="0" name="Variable">SwitchType</param>
+                            <param id="1" name="Value">int(random(0,2.99))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="489221947596223" type="System">
+                            <param id="0" name="Variable">TurnOnSwitch</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                     <sub-events>
-                        <event-block sid="707784497834769">
+                        <event-block sid="508048877148384">
                             <conditions>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="752654368681603" type="Switch">
-                                    <param id="0" name="Instance variable">On</param>
+                                <condition id="-14" name="Compare variable" sid="812152032332601" type="System">
+                                    <param id="0" name="Variable">SwitchType</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="534922319549464" type="System">
-                                    <param id="0" name="Variable">SwitchType</param>
-                                    <param id="1" name="Value">int(random(0,2.99))</param>
+                                <action id="0" name="Call function" sid="685672036612868" type="Function">
+                                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="801279472907588" type="Function">
+                                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="508048877148384">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="812152032332601" type="System">
-                                            <param id="0" name="Variable">SwitchType</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="685672036612868" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="801279472907588" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="544306236617424">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="338443904472377" type="System">
-                                            <param id="0" name="Variable">SwitchType</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="274472718485258" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerFireWave&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="470045130481460" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="738224525246204">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="907214015222376" type="System">
-                                            <param id="0" name="Variable">SwitchType</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">2</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="252678474828573" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerShockWave&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="310795562068033" type="Function">
-                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                        </event-block>
+                        <event-block sid="544306236617424">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="338443904472377" type="System">
+                                    <param id="0" name="Variable">SwitchType</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="274472718485258" type="Function">
+                                    <param id="0" name="Name">&quot;TriggerFireWave&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="470045130481460" type="Function">
+                                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="738224525246204">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="907214015222376" type="System">
+                                    <param id="0" name="Variable">SwitchType</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="252678474828573" type="Function">
+                                    <param id="0" name="Name">&quot;TriggerShockWave&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="310795562068033" type="Function">
+                                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

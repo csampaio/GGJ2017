@@ -47,6 +47,11 @@
     <object-folder>
         <object-type name="Player" sid="467838208356248">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="WatterBuff" sid="191695993385112" type="boolean" />
+                <instance-variable name="FireBuff" sid="775552248094877" type="boolean" />
+                <instance-variable name="ShockBuff" sid="134298514821469" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="373333476315854">
                     <behavior id="Platform" />
@@ -455,6 +460,11 @@
         </object-type>
         <object-type name="Player2" sid="673671517896881">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="WatterBuff" sid="723702359027504" type="boolean" />
+                <instance-variable name="FireBuff" sid="699556990940079" type="boolean" />
+                <instance-variable name="ShockBuff" sid="237370781880774" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="522103667508028">
                     <behavior id="Platform" />
