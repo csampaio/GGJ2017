@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable comment="0 - água / 1 - fogo / 2 - elet" constant="0" name="SwitchType" sid="959637893279228" static="0" type="number">0</variable>
         <variable constant="0" name="Restart" sid="624474947293261" static="0" type="number">0</variable>
         <variable comment="Check if some player died" constant="0" name="PlayerDie" sid="626484144385223" static="0" type="number">0</variable>
         <variable constant="0" name="CurrentPos" sid="703536182818335" static="0" type="number">0</variable>
@@ -63,6 +64,44 @@
                     <param id="1" name="Value">0.01</param>
                 </action>
                 <action id="9" name="Set scale" sid="978258637078278" type="WaveWater">
+                    <param id="0" name="Scale">Self.Scale</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="629391783836110">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="949926354378224" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="679656897926484" type="FireWave">
+                    <param id="0" name="Instance variable">IsOn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="369915873604163" type="FireWave">
+                    <param id="0" name="Instance variable">Scale</param>
+                    <param id="1" name="Value">0.01</param>
+                </action>
+                <action id="9" name="Set scale" sid="805925309803422" type="FireWave">
+                    <param id="0" name="Scale">Self.Scale</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602962737437818">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="207549516224310" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="476108834612853" type="ShockWave">
+                    <param id="0" name="Instance variable">IsOn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="187123175691134" type="ShockWave">
+                    <param id="0" name="Instance variable">Scale</param>
+                    <param id="1" name="Value">0.01</param>
+                </action>
+                <action id="9" name="Set scale" sid="960324536968706" type="ShockWave">
                     <param id="0" name="Scale">Self.Scale</param>
                 </action>
             </actions>
@@ -137,7 +176,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="892334504041311">
+                                <event-block disabled="1" sid="892334504041311">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="130230691439297" type="Switch">
                                             <param id="0" name="Object">Player</param>
@@ -821,5 +860,208 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="656412983549616">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="829407531309450" type="Switch">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="376455974582806" type="Switch">
+                    <param id="0" name="Instance variable">On</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="264520981051070" type="System">
+                    <param id="0" name="Variable">SwitchType</param>
+                    <param id="1" name="Value">int(random(0,2.99))</param>
+                </action>
+                <action disabled="1" id="0" name="Spawn another object" sid="452237969934091" type="Switch">
+                    <param id="0" name="Object">WaveWater</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action disabled="1" id="-8" name="Set angle" sid="974514479221089" type="WaveWater">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action disabled="1" id="9" name="Set scale" sid="246227325464033" type="WaveWater">
+                    <param id="0" name="Scale">Self.Scale</param>
+                </action>
+                <action disabled="1" id="-15" name="Set visible" sid="357316828798917" type="WaveWater">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action disabled="1" id="-13" name="Set boolean" sid="290642728936317" type="WaveWater">
+                    <param id="0" name="Instance variable">IsOn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Bullet" disabled="1" id="5" name="Set enabled" sid="158660513168728" type="WaveWater">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action disabled="1" id="-13" name="Set boolean" sid="677790664349175" type="Switch">
+                    <param id="0" name="Instance variable">On</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action disabled="1" id="5" name="Set frame" sid="544514890304154" type="Switch">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action disabled="1" id="-16" name="Wait" sid="952205867178556" type="System">
+                    <param id="0" name="Seconds">SwitchTime</param>
+                </action>
+                <action disabled="1" id="5" name="Set frame" sid="920732439904221" type="Switch">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action disabled="1" id="-13" name="Set boolean" sid="224416915176928" type="Switch">
+                    <param id="0" name="Instance variable">On</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="110836174678082">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="686906051070755" type="System">
+                            <param id="0" name="Variable">SwitchType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="557979122010572" type="Switch">
+                            <param id="0" name="Object">WaveWater</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="992035950105351" type="WaveWater">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="663790020658685" type="WaveWater">
+                            <param id="0" name="Scale">Self.Scale</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="235245165801740" type="WaveWater">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="296864946659298" type="WaveWater">
+                            <param id="0" name="Instance variable">IsOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="203968073519269" type="WaveWater">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="126060120298743" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="477176515847720" type="Switch">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="462957646716276" type="System">
+                            <param id="0" name="Seconds">SwitchTime</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="589404771860379" type="Switch">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="750957948660198" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="837915856997357">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="518325749383466" type="System">
+                            <param id="0" name="Variable">SwitchType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="179502849576614" type="Switch">
+                            <param id="0" name="Object">FireWave</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="136544694557681" type="FireWave">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="275024340036972" type="FireWave">
+                            <param id="0" name="Scale">Self.Scale</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="446471284310694" type="FireWave">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="135857274579860" type="FireWave">
+                            <param id="0" name="Instance variable">IsOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="780677028880272" type="FireWave">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="870665326911520" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="653868226086442" type="Switch">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="363522011689830" type="System">
+                            <param id="0" name="Seconds">SwitchTime</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="656372842890681" type="Switch">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="253321034915090" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="304056007807343">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="712674394402036" type="System">
+                            <param id="0" name="Variable">SwitchType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="265805137432475" type="Switch">
+                            <param id="0" name="Object">ShockWave</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="944569588698458" type="ShockWave">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="571452313275122" type="ShockWave">
+                            <param id="0" name="Scale">Self.Scale</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="539925511642726" type="ShockWave">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="723320303699363" type="ShockWave">
+                            <param id="0" name="Instance variable">IsOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="882605650264877" type="ShockWave">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="589085278386749" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="186635417439097" type="Switch">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="585213140000468" type="System">
+                            <param id="0" name="Seconds">SwitchTime</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="826305595568568" type="Switch">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="334490067795044" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
