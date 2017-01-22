@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable constant="0" name="CurrentPos" sid="703536182818335" static="0" type="number">0</variable>
+        <variable constant="0" name="EndPos" sid="941810697955910" static="0" type="number">0</variable>
         <variable constant="0" name="SwitchTime" sid="874797366011015" static="0" type="number">1</variable>
         <variable constant="0" name="LeftPosMin" sid="543918421402867" static="0" type="number">0</variable>
         <variable constant="0" name="LeftPosMax" sid="110268403687103" static="0" type="number">0</variable>
@@ -15,7 +17,7 @@
         <variable constant="0" name="PlatformR" sid="737699132056232" static="0" type="number">0</variable>
         <variable constant="0" name="PlatformL" sid="694924038500506" static="0" type="number">0</variable>
         <variable constant="0" name="ScreenOffset" sid="854415207833270" static="0" type="number">0</variable>
-        <variable comment="The current scroll Y position" constant="0" name="MinScroll" sid="355734476877380" static="0" type="number">999</variable>
+        <variable comment="The current scroll Y position" constant="0" name="MinScroll" sid="355734476877380" static="0" type="number">400</variable>
         <variable comment="The next Y scroll position to create a platform at" constant="0" name="NextPlatform" sid="671765888927778" static="0" type="number">0</variable>
         <event-block sid="138213796248457">
             <conditions>
@@ -38,6 +40,10 @@
                     <param id="0" name="Variable">LeftPosMin</param>
                     <param id="1" name="Value">(WindowWidth/2) +(Platform.Width/2)</param>
                 </action>
+                <action id="-9" name="Set value" sid="161220362149514" type="System">
+                    <param id="0" name="Variable">EndPos</param>
+                    <param id="1" name="Value">MinScroll + 1000</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="606766610064622">
@@ -48,6 +54,13 @@
                 <action id="-7" name="Scroll to position" sid="345252772126925" type="System">
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">MinScroll</param>
+                </action>
+                <action id="-9" name="Set value" sid="260071965819760" type="System">
+                    <param id="0" name="Variable">CurrentPos</param>
+                    <param id="1" name="Value">EndPos + MinScroll</param>
+                </action>
+                <action id="0" name="Set text" sid="732629604086308" type="Dist">
+                    <param id="0" name="Text">&quot;Faltam: &quot; &amp; round(CurrentPos/10) &amp; &quot;m&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -67,6 +80,9 @@
                                 <action behavior="Platform" id="7" name="Simulate control" sid="587587965396594" type="Player">
                                     <param id="0" name="Control">0</param>
                                 </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="380503444882077" type="Player2">
+                                    <param id="0" name="Control">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="235067752831476">
@@ -79,6 +95,9 @@
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="754110316601960" type="Player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="257612644167420" type="Player2">
                                     <param id="0" name="Control">1</param>
                                 </action>
                             </actions>
@@ -626,6 +645,70 @@
             <actions>
                 <action id="-9" name="Destroy" sid="433784247382457" type="Platform" />
             </actions>
+        </event-block>
+        <event-group description="" sid="780521562292076" title="Vitória" />
+        <event-block sid="257847126046792">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="216955865744409" type="System">
+                    <param id="0" name="Variable">CurrentPos</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="458438785621246" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="311000305353086" type="Player2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="788524908414014">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="146501231054489" type="Player">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">Player2.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="197163435097867" type="Winner">
+                            <param id="0" name="Text">&quot;Robot 1 WIN!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="558933755996966">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="768040815972406" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="140647089512137">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="322562692072800" type="Player2">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">Player.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="208040805105941" type="Winner">
+                                    <param id="0" name="Text">&quot;Alien WIN!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="715225415858316">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="957421281320185" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="608422491243329" type="Winner">
+                                    <param id="0" name="Text">&quot;It is a draw!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

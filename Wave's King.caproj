@@ -12,13 +12,16 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="alphaclamp">Alpha clamp</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -48,9 +51,8 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432172499644252" speed="8">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\jump_v2_\jump_v2__00001.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432172499644252" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00001.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -92,9 +94,8 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752386155480429" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.941176" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00001.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752386155480429" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\jump_02.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -200,11 +201,22 @@
         </object-type>
         <object-type name="Sprite" sid="526047104698460">
             <plugin id="Sprite" />
+            <effects>
+                <effect-type name="AlphaClamp">
+                    <effect id="alphaclamp" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522788365295918" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_bg.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\img_bg1.jpg" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Dist" sid="886650911841411">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Winner" sid="632595709220070">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
