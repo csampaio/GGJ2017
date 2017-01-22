@@ -667,7 +667,7 @@
                 <event-block sid="788524908414014">
                     <conditions>
                         <condition id="-2" name="Compare Y" sid="146501231054489" type="Player">
-                            <param id="0" name="Comparison">4</param>
+                            <param id="0" name="Comparison">2</param>
                             <param id="1" name="Y co-ordinate">Player2.Y</param>
                         </condition>
                     </conditions>
@@ -686,7 +686,7 @@
                         <event-block sid="140647089512137">
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="322562692072800" type="Player2">
-                                    <param id="0" name="Comparison">4</param>
+                                    <param id="0" name="Comparison">2</param>
                                     <param id="1" name="Y co-ordinate">Player.Y</param>
                                 </condition>
                             </conditions>

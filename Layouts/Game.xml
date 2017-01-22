@@ -13,13 +13,13 @@
     </margins>
     <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
-        <layer name="Bg" sid="100045317207545">
+        <layer name="Sky" sid="872094981863421">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>0</x>
-                <y>0</y>
+                <x>0.04</x>
+                <y>0.04</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -29,30 +29,103 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="31">
+                <instance type="Sky" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="AlphaClamp">
-                            <parameters>
-                                <lower-clamp>0</lower-clamp>
-                                <threshold>0.5</threshold>
-                                <upper-clamp>1</upper-clamp>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>234</x>
-                        <y>232</y>
+                        <x>241</x>
+                        <y>220</y>
                         <z>0</z>
                         <width>500</width>
                         <height>1000</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Mountais" sid="135291989347255">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0.02</x>
+                <y>0.02</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Mountais" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>241</x>
+                        <y>409</y>
+                        <z>0</z>
+                        <width>500</width>
+                        <height>310</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Field" sid="100045317207545">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0.01</x>
+                <y>0.01</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Mountain" uid="14">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>241</x>
+                        <y>568</y>
+                        <z>0</z>
+                        <width>500</width>
+                        <height>304</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -505,10 +578,10 @@
                         <x>382</x>
                         <y>-338</y>
                         <z>0</z>
-                        <width>100</width>
-                        <height>30</height>
+                        <width>105</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.50999999</hotspotX>
+                        <hotspotX>0.514285743</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -534,10 +607,10 @@
                         <x>333</x>
                         <y>151</y>
                         <z>0</z>
-                        <width>100</width>
-                        <height>30</height>
+                        <width>105</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.50999999</hotspotX>
+                        <hotspotX>0.514285743</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -595,10 +668,10 @@
                         <x>156</x>
                         <y>106</y>
                         <z>0</z>
-                        <width>100</width>
-                        <height>30</height>
+                        <width>105</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.50999999</hotspotX>
+                        <hotspotX>0.514285743</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

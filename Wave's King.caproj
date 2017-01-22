@@ -19,9 +19,7 @@
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
     </used-behaviors>
-    <used-effects>
-        <effect author="Scirra" id="alphaclamp">Alpha clamp</effect>
-    </used-effects>
+    <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -65,7 +63,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="632938635484160" speed="5">
-                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\img_platform.png">
+                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plafaforma_defaut.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -136,7 +134,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403619193338319" speed="5">
-                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\img_platform_water.png">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_agua_.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -160,7 +158,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311699981172097" speed="5">
-                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\img_platform_fire.png">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_fogo_.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -184,7 +182,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438740031618062" speed="5">
-                    <frame duration="1" hotspotX="0.51" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\img_platform_light.png">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_raio_.png">
                         <collision-poly>
                             <point x="0.0487805" y="0" />
                             <point x="0.512195" y="0" />
@@ -199,24 +197,56 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="526047104698460">
-            <plugin id="Sprite" />
-            <effects>
-                <effect-type name="AlphaClamp">
-                    <effect id="alphaclamp" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522788365295918" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\img_bg1.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Dist" sid="886650911841411">
             <plugin id="Text" />
         </object-type>
         <object-type name="Winner" sid="632595709220070">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Mountain" sid="752568438027714">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918910933916196" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\cenario_export\1.png">
+                        <collision-poly>
+                            <point x="0.084" y="0.138158" />
+                            <point x="0.5" y="0.101974" />
+                            <point x="0.882" y="0.194079" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sky" sid="121029866090902">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695127374706303" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\cenario_export\3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mountais" sid="996732487712360">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966908898931761" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\cenario_export\2.png">
+                        <collision-poly>
+                            <point x="0.182" y="0.293548" />
+                            <point x="0.5" y="0.641935" />
+                            <point x="0.97" y="0.0483871" />
+                            <point x="1" y="0.5" />
+                            <point x="0.932" y="0.890323" />
+                            <point x="0.5" y="0.706452" />
+                            <point x="0.17" y="0.725806" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
