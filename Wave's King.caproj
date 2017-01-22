@@ -1123,6 +1123,9 @@
         </object-type>
         <object-type name="Fire" sid="872820912851050">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="On" sid="469202583095339" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Jumpthru" sid="959602743870829">
                     <behavior id="jumpthru" />
@@ -1130,7 +1133,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311699981172097" speed="5">
-                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_fogo_.png">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\plaforma_fogo_.png">
                         <collision-poly>
                             <point x="0" y="0.466667" />
                             <point x="1" y="0.466667" />
@@ -1193,6 +1196,9 @@
         </object-type>
         <object-type name="Shock" sid="521719666837942">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="On" sid="701909009257411" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Jumpthru" sid="881662399282489">
                     <behavior id="jumpthru" />
@@ -1200,7 +1206,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438740031618062" speed="5">
-                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_raio_.png">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\plaforma_raio_.png">
                         <collision-poly>
                             <point x="0" y="0.25" />
                             <point x="1" y="0.25" />
@@ -1728,6 +1734,214 @@
         </object-type>
         <object-type name="Text" sid="722765126875239">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="FireWave" sid="942245724112270">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Scale" sid="463851096050046" type="number" />
+                <instance-variable name="IsOn" sid="686404724423181" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="742427092340004">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="417142246475715" speed="29">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\fogo\fogo_00000.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\fogo\fogo_00001.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\fogo\fogo_00002.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\fogo\fogo_00003.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\fogo\fogo_00004.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\fogo\fogo_00005.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShockWave" sid="719281689449202">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Scale" sid="476460618269044" type="number" />
+                <instance-variable name="IsOn" sid="550489605353332" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="516042205573731">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941655787064240" speed="29">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00000.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00001.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00002.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00003.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00004.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00005.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00006.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00007.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00008.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00009.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00010.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00011.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00012.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00013.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00014.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\Pós Games\GlobalGameJam\GGJ2017\Assets\raio\raio_00015.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
         <object-type name="Audio" sid="342227748821016">
             <plugin id="Audio" />

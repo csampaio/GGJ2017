@@ -449,6 +449,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -465,8 +468,8 @@
                         <width>105</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.514285743</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -478,6 +481,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -494,8 +500,8 @@
                         <width>105</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.514285743</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -641,6 +647,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -652,13 +661,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>157.545440674</x>
-                        <y>1036.545410156</y>
+                        <y>1005.545410156</y>
                         <z>0</z>
                         <width>105</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.514285743</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -670,6 +679,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -681,13 +693,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>244.545440674</x>
-                        <y>1111.545410156</y>
+                        <y>1082.545410156</y>
                         <z>0</z>
                         <width>105</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.514285743</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -731,6 +743,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -819,6 +834,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <On>false</On>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
                             <properties>
@@ -919,6 +937,82 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="FireWave" uid="38">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Scale>0.1</Scale>
+                        <IsOn>false</IsOn>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>200</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>322</x>
+                        <y>-74</y>
+                        <z>0</z>
+                        <width>38.5</width>
+                        <height>57.75</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.57079649</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ShockWave" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Scale>0.1</Scale>
+                        <IsOn>false</IsOn>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>200</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>157</x>
+                        <y>-80</y>
+                        <z>0</z>
+                        <width>38.5</width>
+                        <height>57.75</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.57079649</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
