@@ -967,17 +967,22 @@
                         <condition id="5" inverted="1" name="Is tag playing" sid="733831656221368" type="Audio">
                             <param id="0" name="Tag">&quot;robotdie&quot;</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="849322305347649" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="637681267689285" type="System">
-                            <param id="0" name="Variable">PlayerDie</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                         <action id="0" name="Play" sid="321804478857234" type="Audio">
                             <param id="0" name="Audio file">Personagem - Robo morrendo</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;robotdie&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="637681267689285" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -991,17 +996,22 @@
                         <condition id="5" inverted="1" name="Is tag playing" sid="350017658512268" type="Audio">
                             <param id="0" name="Tag">&quot;aliendie&quot;</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="602245184274737" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="869566517259602" type="System">
-                            <param id="0" name="Variable">PlayerDie</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                         <action id="0" name="Play" sid="205903578409063" type="Audio">
                             <param id="0" name="Audio file">Personagem - Robo morrendo</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;aliendie&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="869566517259602" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1030,6 +1040,21 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="357749987332567">
+                            <conditions>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="756617346872497" type="Audio">
+                                    <param id="0" name="Tag">&quot;winnersound&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="144417986054287" type="Audio">
+                                    <param id="0" name="Audio file">Eventos - Vitoria</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;winnersound&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block any="1" sid="788524908414014">
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="146501231054489" type="Player">
@@ -1044,12 +1069,6 @@
                             <actions>
                                 <action id="0" name="Set text" sid="197163435097867" type="Winner">
                                     <param id="0" name="Text">&quot;Robot WIN!&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="144417986054287" type="Audio">
-                                    <param id="0" name="Audio file">Eventos - Vitoria</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1074,12 +1093,6 @@
                                         <action id="0" name="Set text" sid="208040805105941" type="Winner">
                                             <param id="0" name="Text">&quot;Alien WIN!&quot;</param>
                                         </action>
-                                        <action id="0" name="Play" sid="857109404879701" type="Audio">
-                                            <param id="0" name="Audio file">Eventos - Vitoria</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="715225415858316">
@@ -1103,6 +1116,7 @@
                     <actions>
                         <action id="-21" name="Reset global variables" sid="860948076708825" type="System" />
                         <action id="-26" name="Restart layout" sid="952665846477282" type="System" />
+                        <action id="33" name="Stop all" sid="679128293381436" type="Audio" />
                         <action id="2" name="Set visible" sid="813817249324766" type="RestartBtn">
                             <param id="0" name="Visibility">0</param>
                         </action>
@@ -1194,67 +1208,27 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="968213329027269">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="404176569249458" type="WaveWater">
-                            <param id="0" name="Object">Fire</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="625585027374864" type="Fire">
-                            <param id="0" name="Animation">&quot;On&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="657980971352198" type="System">
-                            <param id="0" name="Seconds">SwitchTime</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="655225597020565" type="Fire">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="876190985829833">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="919593464581095" type="WaveWater">
+                        <condition id="0" name="On collision with another object" sid="919593464581095" type="FireWave">
                             <param id="0" name="Object">Destroyer</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="735088773460681" type="WaveWater" />
+                        <action id="-9" name="Destroy" sid="735088773460681" type="FireWave" />
                         <action id="6" name="Stop" sid="664300876419069" type="Audio">
                             <param id="0" name="Tag">&quot;firewave&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="470199652340197">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="612417758751875" type="WaveWater">
-                            <param id="0" name="Object">Shock</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="797533330105325" type="Shock">
-                            <param id="0" name="Animation">&quot;On&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="377863042091782" type="System">
-                            <param id="0" name="Seconds">SwitchTime</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="258534278965140" type="Shock">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="917245846772965">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="153745002127710" type="WaveWater">
+                        <condition id="0" name="On collision with another object" sid="153745002127710" type="ShockWave">
                             <param id="0" name="Object">Destroyer</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="256952083288482" type="WaveWater" />
+                        <action id="-9" name="Destroy" sid="256952083288482" type="ShockWave" />
                         <action id="6" name="Stop" sid="825461137980388" type="Audio">
                             <param id="0" name="Tag">&quot;shockwave&quot;</param>
                         </action>
@@ -1278,284 +1252,232 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="235540715487869">
-            <conditions>
-                <condition id="0" name="On function" sid="231677377310933" type="Function">
-                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="706697443939031" type="Switch">
-                    <param id="0" name="Instance variable">On</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="5" name="Set frame" sid="786608836343071" type="Switch">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="888484765848194" type="System">
-                    <param id="0" name="Seconds">SwitchTime</param>
-                </action>
-                <action id="5" name="Set frame" sid="130077614259183" type="Switch">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="451321591006394" type="Switch">
-                    <param id="0" name="Instance variable">On</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="583545570312794">
-            <conditions>
-                <condition id="0" name="On function" sid="296583585704922" type="Function">
-                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="995360205691024" type="Switch">
-                    <param id="0" name="Object">WaveWater</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-8" name="Set angle" sid="270256076147023" type="WaveWater">
-                    <param id="0" name="Angle">270</param>
-                </action>
-                <action id="9" name="Set scale" sid="436533824563855" type="WaveWater">
-                    <param id="0" name="Scale">Self.Scale</param>
-                </action>
-                <action id="-15" name="Set visible" sid="846332333657269" type="WaveWater">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="723762681318041" type="WaveWater">
-                    <param id="0" name="Instance variable">IsOn</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="110099856132609" type="WaveWater">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="0" name="Play" sid="635227967134298" type="Audio">
-                    <param id="0" name="Audio file">Agua - Onda novo1</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;waterwave&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="444428277142474">
-            <conditions>
-                <condition id="0" name="On function" sid="586478915656035" type="Function">
-                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="647218955297504" type="Switch">
-                    <param id="0" name="Object">WaveWater</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-8" name="Set angle" sid="931995183185609" type="WaveWater">
-                    <param id="0" name="Angle">270</param>
-                </action>
-                <action id="9" name="Set scale" sid="829540833195744" type="WaveWater">
-                    <param id="0" name="Scale">Self.Scale</param>
-                </action>
-                <action id="-15" name="Set visible" sid="354934353898180" type="WaveWater">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="455710629938888" type="WaveWater">
-                    <param id="0" name="Instance variable">IsOn</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="453283747059261" type="WaveWater">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="0" name="Play" sid="386238316625726" type="Audio">
-                    <param id="0" name="Audio file">Fogo - Onda2</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;firewave&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="538711704823768">
-            <conditions>
-                <condition id="0" name="On function" sid="275928558499818" type="Function">
-                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="637210144180938" type="Switch">
-                    <param id="0" name="Object">WaveWater</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-8" name="Set angle" sid="953158591211128" type="WaveWater">
-                    <param id="0" name="Angle">270</param>
-                </action>
-                <action id="9" name="Set scale" sid="629094926396127" type="WaveWater">
-                    <param id="0" name="Scale">Self.Scale</param>
-                </action>
-                <action id="-15" name="Set visible" sid="449029050515173" type="WaveWater">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="419406227713549" type="WaveWater">
-                    <param id="0" name="Instance variable">IsOn</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="263388897762362" type="WaveWater">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="0" name="Play" sid="667836936875749" type="Audio">
-                    <param id="0" name="Audio file">Eletrico - Onda3</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;shockwave&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="408902499441196">
-            <conditions>
-                <condition id="0" name="On function" sid="753827718038544" type="Function">
-                    <param id="0" name="Name">&quot;TriggerFireWave&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="679603794513155" type="Switch">
-                    <param id="0" name="Object">FireWave</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-8" name="Set angle" sid="668702870103743" type="FireWave">
-                    <param id="0" name="Angle">270</param>
-                </action>
-                <action id="9" name="Set scale" sid="283740892859151" type="FireWave">
-                    <param id="0" name="Scale">Self.Scale</param>
-                </action>
-                <action id="-15" name="Set visible" sid="999013772417099" type="FireWave">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="615825778641021" type="FireWave">
-                    <param id="0" name="Instance variable">IsOn</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="784063543828848" type="FireWave">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="693266541140286">
-            <conditions>
-                <condition id="0" name="On function" sid="962772467708398" type="Function">
-                    <param id="0" name="Name">&quot;TriggerShockWave&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="809141186925882" type="Switch">
-                    <param id="0" name="Object">ShockWave</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-8" name="Set angle" sid="100242041447308" type="ShockWave">
-                    <param id="0" name="Angle">270</param>
-                </action>
-                <action id="9" name="Set scale" sid="598741850699960" type="ShockWave">
-                    <param id="0" name="Scale">Self.Scale</param>
-                </action>
-                <action id="-15" name="Set visible" sid="963907579219506" type="ShockWave">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="291414956994126" type="ShockWave">
-                    <param id="0" name="Instance variable">IsOn</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="528278943326971" type="ShockWave">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block any="1" sid="794595719504783">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="469912419151773" type="Switch">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="313722151384842" type="Switch">
-                    <param id="0" name="Object">Player2</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="964901098802789" title="Functions">
             <sub-events>
-                <event-block sid="707784497834769">
+                <event-block sid="693266541140286">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="752654368681603" type="Switch">
-                            <param id="0" name="Instance variable">On</param>
+                        <condition id="0" name="On function" sid="962772467708398" type="Function">
+                            <param id="0" name="Name">&quot;TriggerShockWave&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="534922319549464" type="System">
-                            <param id="0" name="Variable">SwitchType</param>
-                            <param id="1" name="Value">int(random(0,2.99))</param>
+                        <action id="0" name="Spawn another object" sid="809141186925882" type="Switch">
+                            <param id="0" name="Object">ShockWave</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="100242041447308" type="ShockWave">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="598741850699960" type="ShockWave">
+                            <param id="0" name="Scale">Self.Scale</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="963907579219506" type="ShockWave">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="291414956994126" type="ShockWave">
+                            <param id="0" name="Instance variable">IsOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="528278943326971" type="ShockWave">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="667836936875749" type="Audio">
+                            <param id="0" name="Audio file">Eletrico - Onda3</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;shockwave&quot;</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="408902499441196">
+                    <conditions>
+                        <condition id="0" name="On function" sid="753827718038544" type="Function">
+                            <param id="0" name="Name">&quot;TriggerFireWave&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="679603794513155" type="Switch">
+                            <param id="0" name="Object">FireWave</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="668702870103743" type="FireWave">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="283740892859151" type="FireWave">
+                            <param id="0" name="Scale">Self.Scale</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="999013772417099" type="FireWave">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="615825778641021" type="FireWave">
+                            <param id="0" name="Instance variable">IsOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="784063543828848" type="FireWave">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="386238316625726" type="Audio">
+                            <param id="0" name="Audio file">Fogo - Onda2</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;firewave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="583545570312794">
+                    <conditions>
+                        <condition id="0" name="On function" sid="296583585704922" type="Function">
+                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="995360205691024" type="Switch">
+                            <param id="0" name="Object">WaveWater</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="270256076147023" type="WaveWater">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="436533824563855" type="WaveWater">
+                            <param id="0" name="Scale">Self.Scale</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="846332333657269" type="WaveWater">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="723762681318041" type="WaveWater">
+                            <param id="0" name="Instance variable">IsOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="110099856132609" type="WaveWater">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="635227967134298" type="Audio">
+                            <param id="0" name="Audio file">Agua - Onda novo1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;waterwave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="235540715487869">
+                    <conditions>
+                        <condition id="0" name="On function" sid="231677377310933" type="Function">
+                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="706697443939031" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="786608836343071" type="Switch">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="888484765848194" type="System">
+                            <param id="0" name="Seconds">SwitchTime</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="130077614259183" type="Switch">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="451321591006394" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="542428438277221" title="Switch">
+            <sub-events>
+                <event-block any="1" sid="794595719504783">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="469912419151773" type="Switch">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="313722151384842" type="Switch">
+                            <param id="0" name="Object">Player2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="508048877148384">
+                        <event-block sid="707784497834769">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="812152032332601" type="System">
-                                    <param id="0" name="Variable">SwitchType</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="752654368681603" type="Switch">
+                                    <param id="0" name="Instance variable">On</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Call function" sid="685672036612868" type="Function">
-                                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="0" name="Call function" sid="801279472907588" type="Function">
-                                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="544306236617424">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="338443904472377" type="System">
+                                <action id="-9" name="Set value" sid="534922319549464" type="System">
                                     <param id="0" name="Variable">SwitchType</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="274472718485258" type="Function">
-                                    <param id="0" name="Name">&quot;TriggerFireWave&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="0" name="Call function" sid="470045130481460" type="Function">
-                                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                    <param id="1" name="Value">int(random(0,2.99))</param>
                                 </action>
                             </actions>
-                        </event-block>
-                        <event-block sid="738224525246204">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="907214015222376" type="System">
-                                    <param id="0" name="Variable">SwitchType</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="252678474828573" type="Function">
-                                    <param id="0" name="Name">&quot;TriggerShockWave&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="0" name="Call function" sid="310795562068033" type="Function">
-                                    <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
+                            <sub-events>
+                                <event-block sid="508048877148384">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="812152032332601" type="System">
+                                            <param id="0" name="Variable">SwitchType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="685672036612868" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="801279472907588" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="544306236617424">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="338443904472377" type="System">
+                                            <param id="0" name="Variable">SwitchType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="274472718485258" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerFireWave&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="470045130481460" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="738224525246204">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="907214015222376" type="System">
+                                            <param id="0" name="Variable">SwitchType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="252678474828573" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerShockWave&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="310795562068033" type="Function">
+                                            <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>

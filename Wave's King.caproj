@@ -1962,7 +1962,7 @@
         </global-instance>
         <global-instance type="Keyboard" uid="24" />
         <global-instance type="Function" uid="19" />
-        <global-instance type="Audio" uid="38">
+        <global-instance type="Audio" uid="40">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
