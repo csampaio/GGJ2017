@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable constant="0" name="Restart" sid="624474947293261" static="0" type="number">0</variable>
+        <variable comment="Check if some player died" constant="0" name="PlayerDie" sid="626484144385223" static="0" type="number">0</variable>
         <variable constant="0" name="CurrentPos" sid="703536182818335" static="0" type="number">0</variable>
         <variable constant="0" name="EndPos" sid="941810697955910" static="0" type="number">0</variable>
         <variable constant="0" name="SwitchTime" sid="874797366011015" static="0" type="number">2</variable>
@@ -294,32 +296,6 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block sid="828631963738311">
-                    <conditions>
-                        <condition id="-3" inverted="1" name="Is on-screen" sid="717337604788766" type="Player" />
-                        <condition id="-2" name="Compare Y" sid="133191962785825" type="Player">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-21" name="Reset global variables" sid="559523168773776" type="System" />
-                        <action id="-26" name="Restart layout" sid="407054930380921" type="System" />
-                    </actions>
-                </event-block>
-                <event-block sid="522080773742947">
-                    <conditions>
-                        <condition id="-3" inverted="1" name="Is on-screen" sid="954574552423858" type="Player2" />
-                        <condition id="-2" name="Compare Y" sid="379884979372247" type="Player2">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-21" name="Reset global variables" sid="850905503594938" type="System" />
-                        <action id="-26" name="Restart layout" sid="911340986829231" type="System" />
-                    </actions>
-                </event-block>
                 <event-block sid="519950811099770">
                     <conditions>
                         <condition id="-1" name="Compare X" sid="239499956717095" type="Player">
@@ -686,14 +662,49 @@
                 <action id="-9" name="Destroy" sid="433784247382457" type="Platform" />
             </actions>
         </event-block>
-        <event-group description="" sid="780521562292076" title="Vitória">
+        <event-group description="" sid="780521562292076" title="Winning">
             <sub-events>
-                <event-block sid="257847126046792">
+                <event-block sid="828631963738311">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="717337604788766" type="Player" />
+                        <condition id="-2" name="Compare Y" sid="133191962785825" type="Player">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="637681267689285" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="522080773742947">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="954574552423858" type="Player2" />
+                        <condition id="-2" name="Compare Y" sid="379884979372247" type="Player2">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="869566517259602" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="257847126046792">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="216955865744409" type="System">
                             <param id="0" name="Variable">CurrentPos</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="107893562819376" type="System">
+                            <param id="0" name="Variable">PlayerDie</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -703,18 +714,25 @@
                         <action behavior="Platform" id="11" name="Set enabled" sid="311000305353086" type="Player2">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action id="2" name="Set visible" sid="376114148489787" type="RestartBtn">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="788524908414014">
+                        <event-block any="1" sid="788524908414014">
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="146501231054489" type="Player">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="Y co-ordinate">Player2.Y</param>
                                 </condition>
+                                <condition id="-2" name="Compare Y" sid="381404977251076" type="Player2">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="197163435097867" type="Winner">
-                                    <param id="0" name="Text">&quot;Robot 1 WIN!&quot;</param>
+                                    <param id="0" name="Text">&quot;Robot WIN!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -724,11 +742,15 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="140647089512137">
+                                <event-block any="1" sid="140647089512137">
                                     <conditions>
                                         <condition id="-2" name="Compare Y" sid="322562692072800" type="Player2">
                                             <param id="0" name="Comparison">2</param>
                                             <param id="1" name="Y co-ordinate">Player.Y</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="663168125180764" type="Player">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -750,6 +772,18 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="275338319085259">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="499373251872449" type="RestartBtn" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="860948076708825" type="System" />
+                        <action id="-26" name="Restart layout" sid="952665846477282" type="System" />
+                        <action id="2" name="Set visible" sid="813817249324766" type="RestartBtn">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
