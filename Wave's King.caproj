@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
     </used-behaviors>
@@ -233,7 +234,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403619193338319" speed="5">
-                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_agua_.png">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\plaforma_agua_.png">
                         <collision-poly>
                             <point x="0" y="0.116667" />
                             <point x="1" y="0.116667" />
@@ -743,39 +744,273 @@
         </object-type>
         <object-type name="WaveWater" sid="239930029728721">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Scale" sid="901671166452833" type="number" />
+                <instance-variable name="IsOn" sid="982160420752479" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="437434248044533">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="31" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321471774557565" speed="24">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00014.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00015.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00016.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00017.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00018.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00019.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00020.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00021.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00022.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00023.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00024.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00025.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00026.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00027.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00028.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00029.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00030.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00000.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00001.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00002.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00003.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00004.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00005.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00006.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00007.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00008.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00009.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00010.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00011.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00012.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00013.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00014.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00015.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00016.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00017.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00018.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00019.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00020.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00021.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00022.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00023.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00024.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00025.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00026.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00027.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00028.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00029.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00030.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Destroyer" sid="960283088310647">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="782419482331483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
