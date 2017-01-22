@@ -63,6 +63,20 @@
                     <param id="0" name="Text">&quot;Faltam: &quot; &amp; round(CurrentPos/10) &amp; &quot;m&quot;</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="274025403476020">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="293404679028537" type="Switch">
+                            <param id="0" name="Instance variable">On</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="221870972092612" type="WaveWater">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="386512493300715" title="Player">
             <sub-events>
@@ -126,6 +140,11 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Spawn another object" sid="657500780018519" type="Switch">
+                                            <param id="0" name="Object">WaveWater</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
                                         <action id="-13" name="Set boolean" sid="506787167273789" type="Switch">
                                             <param id="0" name="Instance variable">On</param>
                                             <param id="1" name="Value">1</param>
@@ -143,6 +162,7 @@
                                             <param id="0" name="Instance variable">On</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action id="-9" name="Destroy" sid="220560389820192" type="WaveWater" />
                                     </actions>
                                 </event-block>
                             </sub-events>

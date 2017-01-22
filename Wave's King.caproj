@@ -52,6 +52,56 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432172499644252" speed="8">
                     <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P2\jump_p2\jump_p2__00001.png" />
                 </animation>
+                <animation framecount="15" loop="1" name="Watter" pingpong="0" repeatcount="1" repeatto="0" sid="887519294066183" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00014.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="Fire" pingpong="0" repeatcount="1" repeatto="0" sid="528693184921358" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_fogo_p2\seq_fogo_p2__00005.png" />
+                </animation>
+                <animation framecount="23" loop="1" name="Shock" pingpong="0" repeatcount="1" repeatto="0" sid="706521646857947" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_raio_p2\seq_raio_p2__00022.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Platform" sid="415802153309503">
@@ -93,7 +143,67 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752386155480429" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\jump_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\jump.png" />
+                </animation>
+                <animation framecount="30" loop="1" name="Watter" pingpong="0" repeatcount="1" repeatto="0" sid="543828200798625" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00029.png" />
+                </animation>
+                <animation framecount="1" loop="1" name="Fire" pingpong="0" repeatcount="1" repeatto="0" sid="313295169514015" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_fogo\seq_persona_p3_fogo_00004.png" />
+                </animation>
+                <animation framecount="23" loop="1" name="Shock" pingpong="0" repeatcount="1" repeatto="0" sid="169721931736889" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_P3_raio\seq_persona_p3_raio_00022.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -109,18 +219,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="385575754641846" speed="0">
-                    <frame duration="1" hotspotX="0.513514" hotspotY="0.517241" original-source="E:\projetos\GGJ2017\Assets\img_switch_OFF.png">
-                        <collision-poly>
-                            <point x="0.0487805" y="0" />
-                            <point x="0.512195" y="0" />
-                            <point x="0.97561" y="0" />
-                            <point x="0.97561" y="0.166667" />
-                            <point x="0.951219" y="0.916667" />
-                            <point x="0.512195" y="0.958333" />
-                            <point x="0.0487805" y="0.958333" />
-                            <point x="0.0243902" y="0.166667" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.517241" original-source="E:\projetos\GGJ2017\Assets\img_switch_OFF.png" />
                     <frame duration="1" hotspotX="0.513514" hotspotY="0.517241" original-source="E:\projetos\GGJ2017\Assets\img_switch_ON.png" />
                 </animation>
             </animation-folder>
@@ -136,14 +235,180 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403619193338319" speed="5">
                     <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_agua_.png">
                         <collision-poly>
-                            <point x="0.0487805" y="0" />
-                            <point x="0.512195" y="0" />
-                            <point x="0.97561" y="0" />
-                            <point x="0.97561" y="0.166667" />
-                            <point x="0.951219" y="0.916667" />
-                            <point x="0.512195" y="0.958333" />
-                            <point x="0.0487805" y="0.958333" />
-                            <point x="0.0243902" y="0.166667" />
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="21" loop="1" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="308134813593199" speed="24">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00000.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00002.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00003.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00004.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00005.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00006.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00007.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00008.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00009.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00010.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00011.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00012.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00013.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00014.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00015.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00016.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00017.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00018.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00019.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_agua\plataforma_agua_00020.png">
+                        <collision-poly>
+                            <point x="0" y="0.116667" />
+                            <point x="1" y="0.116667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -160,14 +425,60 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311699981172097" speed="5">
                     <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_fogo_.png">
                         <collision-poly>
-                            <point x="0.0487805" y="0" />
-                            <point x="0.512195" y="0" />
-                            <point x="0.97561" y="0" />
-                            <point x="0.97561" y="0.166667" />
-                            <point x="0.951219" y="0.916667" />
-                            <point x="0.512195" y="0.958333" />
-                            <point x="0.0487805" y="0.958333" />
-                            <point x="0.0243902" y="0.166667" />
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="773985980970067" speed="24">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plaforma_fogo\plataforma_fogo_00000.png">
+                        <collision-poly>
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plaforma_fogo\plataforma_fogo_00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plaforma_fogo\plataforma_fogo_00002.png">
+                        <collision-poly>
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plaforma_fogo\plataforma_fogo_00003.png">
+                        <collision-poly>
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plaforma_fogo\plataforma_fogo_00004.png">
+                        <collision-poly>
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plaforma_fogo\plataforma_fogo_00005.png">
+                        <collision-poly>
+                            <point x="0" y="0.466667" />
+                            <point x="1" y="0.466667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -184,14 +495,196 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438740031618062" speed="5">
                     <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\plaforma_raio_.png">
                         <collision-poly>
-                            <point x="0.0487805" y="0" />
-                            <point x="0.512195" y="0" />
-                            <point x="0.97561" y="0" />
-                            <point x="0.97561" y="0.166667" />
-                            <point x="0.951219" y="0.916667" />
-                            <point x="0.512195" y="0.958333" />
-                            <point x="0.0487805" y="0.958333" />
-                            <point x="0.0243902" y="0.166667" />
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="23" loop="1" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="839430960531710" speed="24">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00000.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00001.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00002.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00003.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00004.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00005.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00006.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00007.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00008.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00009.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00010.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00011.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00012.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00013.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00014.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00015.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00016.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00017.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00018.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00019.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00020.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00021.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_plataformas\plataforma_raio\plataforma_raio_00022.png">
+                        <collision-poly>
+                            <point x="0" y="0.25" />
+                            <point x="1" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -245,6 +738,44 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WaveWater" sid="239930029728721">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="31" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321471774557565" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\projetos\GGJ2017\Assets\aguua\agua_00030.png" />
                 </animation>
             </animation-folder>
         </object-type>
