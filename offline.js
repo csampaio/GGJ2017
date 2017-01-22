@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1485113411,
+	"version": 1485116211,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -30,6 +30,14 @@
 		"images/firewave-sheet2.png",
 		"images/shockwave-sheet0.png",
 		"images/shockwave-sheet1.png",
+		"images/sprite-sheet0.png",
+		"images/sprite2-sheet0.png",
+		"images/startbtn-sheet0.png",
+		"images/startbtn-sheet1.png",
+		"images/startbtn-sheet2.png",
+		"images/bg-sheet0.png",
+		"images/bgcredits-sheet0.png",
+		"images/backbtn-sheet0.png",
 		"media/agua - ativacao plataforma2.m4a",
 		"media/agua - ativacao plataforma2.ogg",
 		"media/agua - onda novo1.m4a",
