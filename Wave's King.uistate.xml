@@ -13,7 +13,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout active="1" order="0">Game</layout>
         <layout order="2">StartMenu</layout>
         <layout order="4">Credits</layout>
-        <event-sheet order="1">GameEvents</event-sheet>
+        <event-sheet active="1" order="1">GameEvents</event-sheet>
         <event-sheet order="3">MenuEvents</event-sheet>
     </open-tabs>
     <properties>

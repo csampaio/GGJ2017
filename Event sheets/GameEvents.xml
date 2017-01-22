@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable constant="0" name="FireBuffDir" sid="225599629622509" static="0" type="number">0</variable>
         <variable constant="0" name="TurnOnSwitch" sid="683383483968277" static="0" type="number">0</variable>
         <variable comment="0 - água / 1 - fogo / 2 - elet" constant="0" name="SwitchType" sid="208789106138632" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerDBuffTime" sid="562488334915952" static="0" type="number">2</variable>
@@ -147,7 +148,7 @@
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="4" name="Set jump strength" sid="494703278344481" type="Player">
-                                    <param id="0" name="Jump strength">500</param>
+                                    <param id="0" name="Jump strength">150</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -169,7 +170,7 @@
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="4" name="Set jump strength" sid="679538073038971" type="Player2">
-                                    <param id="0" name="Jump strength">500</param>
+                                    <param id="0" name="Jump strength">150</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -180,22 +181,96 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="4" name="Set jump strength" sid="997699739437024" type="Player">
-                                    <param id="0" name="Jump strength">500</param>
+                                <action id="-9" name="Set value" sid="907409107447855" type="System">
+                                    <param id="0" name="Variable">FireBuffDir</param>
+                                    <param id="1" name="Value">int(random(0,1.99))</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="535034825628106">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="778351339774117" type="System">
+                                            <param id="0" name="Variable">FireBuffDir</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="346990932117786" type="Player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="739481034727183" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="303167784256729">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="762215316988590" type="System">
+                                            <param id="0" name="Variable">FireBuffDir</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="625737196263805" type="Player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="278317480862430" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="962304939304215">
+                        <event-block sid="958430360310522">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="100173196561969" type="Player2">
+                                <condition id="-8" name="Is boolean instance variable set" sid="243649572501681" type="Player2">
                                     <param id="0" name="Instance variable">FireBuff</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="4" name="Set jump strength" sid="672784430756750" type="Player2">
-                                    <param id="0" name="Jump strength">500</param>
+                                <action id="-9" name="Set value" sid="743593844262999" type="System">
+                                    <param id="0" name="Variable">FireBuffDir</param>
+                                    <param id="1" name="Value">int(random(0,1.99))</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="258615091986086">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="167171468671391" type="System">
+                                            <param id="0" name="Variable">FireBuffDir</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="876825443712480" type="Player2">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="924742759376532" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="203634063271594">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="291451353439546" type="System">
+                                            <param id="0" name="Variable">FireBuffDir</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="114846418601652" type="Player2">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="972728726517209" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="841674569093902">
                             <conditions>
@@ -209,9 +284,9 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="907285754952579" title="Hit">
+                <event-group description="" disabled="1" sid="907285754952579" title="Hit">
                     <sub-events>
-                        <event-block sid="303683236761218">
+                        <event-block disabled="1" sid="303683236761218">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="377822606678495" type="Water">
                                     <param id="0" name="Instance variable">On</param>
@@ -219,7 +294,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="183496975936523">
+                                <event-block disabled="1" sid="183496975936523">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="177325498682417" type="Player">
                                             <param id="0" name="Object">Fire</param>
@@ -247,7 +322,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="125303252672294">
+                                <event-block disabled="1" sid="125303252672294">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="355057925438982" type="Player2">
                                             <param id="0" name="Object">Fire</param>
@@ -277,7 +352,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="215156898870338">
+                        <event-block disabled="1" sid="215156898870338">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="449463161063660" type="Water">
                                     <param id="0" name="Instance variable">On</param>
@@ -285,7 +360,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="146147543080038">
+                                <event-block disabled="1" sid="146147543080038">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="585444220829406" type="Player">
                                             <param id="0" name="Object">Shock</param>
@@ -305,7 +380,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="719250949015219">
+                                <event-block disabled="1" sid="719250949015219">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="811530441996834" type="Player2">
                                             <param id="0" name="Object">Shock</param>
@@ -325,7 +400,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="845722210252887">
+                                <event-block disabled="1" sid="845722210252887">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="816385262021854" type="Player2">
                                             <param id="0" name="Object">Water</param>
@@ -347,7 +422,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="423174248762677">
+                        <event-block disabled="1" sid="423174248762677">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="871532870664999" type="Fire">
                                     <param id="0" name="Instance variable">On</param>
@@ -355,7 +430,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="195129962671642">
+                                <event-block disabled="1" sid="195129962671642">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="623289032130633" type="Player">
                                             <param id="0" name="Object">Fire</param>
@@ -375,7 +450,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="312953555752211">
+                                <event-block disabled="1" sid="312953555752211">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="118531649907350" type="Player2">
                                             <param id="0" name="Object">Fire</param>
@@ -397,7 +472,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="903483370556338">
+                        <event-block disabled="1" sid="903483370556338">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="406568468298653" type="Shock">
                                     <param id="0" name="Instance variable">On</param>
@@ -405,7 +480,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="180581637885949">
+                                <event-block disabled="1" sid="180581637885949">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="141797589407711" type="Player">
                                             <param id="0" name="Object">Shock</param>
@@ -425,7 +500,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="384689596445441">
+                                <event-block disabled="1" sid="384689596445441">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="237857346331978" type="Player2">
                                             <param id="0" name="Object">Shock</param>
@@ -556,26 +631,258 @@
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="880261909289767">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="626224822810678" type="Water">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="845509820539214">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="586267412969813" type="Water">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="341236598446596" type="Player">
+                                                    <param id="0" name="Instance variable">WatterBuff</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="635936191799283" type="Player">
+                                                    <param id="0" name="Animation">&quot;Water&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="603763388942862" type="System">
+                                                    <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="819369122619181" type="Player">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="739201785818030" type="Player">
+                                                    <param id="0" name="Instance variable">WatterBuff</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="171448957718529">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="543636136230328" type="Fire">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="129295137713875">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="989971951882443" type="Fire">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="774164265691101" type="Player">
+                                                    <param id="0" name="Instance variable">FireBuff</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="882548114016438" type="Player">
+                                                    <param id="0" name="Animation">&quot;Fire&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="908127880264523" type="System">
+                                                    <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="291930723072978" type="Player">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="867853402300150" type="Player">
+                                                    <param id="0" name="Instance variable">FireBuff</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="767211638051421">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="566353061517868" type="Shock">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="415795371161713">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="809354826420849" type="Shock">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="702828642030272" type="Player">
+                                                    <param id="0" name="Instance variable">ShockBuff</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="279307684581814" type="Player">
+                                                    <param id="0" name="Animation">&quot;Shock&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="581296535535736" type="System">
+                                                    <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="889495052180569" type="Player">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="991040039215538" type="Player">
+                                                    <param id="0" name="Instance variable">ShockBuff</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block any="1" sid="502944909330676">
+                        <event-block any="1" sid="156277529745375">
                             <conditions>
-                                <condition behavior="Platform" id="2" name="Is on floor" sid="428688339723299" type="Player2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="743417388715624" type="Player2" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="477028068240078" type="Player2">
+                                <action id="4" name="Set animation" sid="105796561272651" type="Player2">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="227086714695686" type="Player2">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="599376988940644" type="Player2">
                                     <param id="0" name="Control">2</param>
                                 </action>
-                                <action id="0" name="Play" sid="217887343834591" type="Audio">
-                                    <param id="0" name="Audio file">Personagem - Pulo4</param>
+                                <action id="0" name="Play" sid="238721879637890" type="Audio">
+                                    <param id="0" name="Audio file">Personagem - Pulo3</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">-20</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="909181981834453">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="550283931787336" type="Water">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="558557399983146">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="943421877020189" type="Water">
+                                                    <param id="0" name="Object">Player2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="975156922672718" type="Player2">
+                                                    <param id="0" name="Instance variable">WatterBuff</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="688324100353588" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Water&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="992870041741445" type="System">
+                                                    <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="674236257082718" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="516167410412338" type="Player2">
+                                                    <param id="0" name="Instance variable">WatterBuff</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="191931084515445">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="630673498415192" type="Fire">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="919146219114813">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="630461094763223" type="Fire">
+                                                    <param id="0" name="Object">Player2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="975616902583416" type="Player2">
+                                                    <param id="0" name="Instance variable">FireBuff</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="687000318322306" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Fire&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="277043359340961" type="System">
+                                                    <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="790591662273765" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="770208994666389" type="Player2">
+                                                    <param id="0" name="Instance variable">FireBuff</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="706990679106997">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="599078719855426" type="Shock">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="194395511444861">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="431795241051638" type="Shock">
+                                                    <param id="0" name="Object">Player2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="890433032764128" type="Player2">
+                                                    <param id="0" name="Instance variable">ShockBuff</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="304234089424671" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Shock&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="807586227321163" type="System">
+                                                    <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="891355413144196" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="378516245640388" type="Player2">
+                                                    <param id="0" name="Instance variable">ShockBuff</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="738862096986255">
                             <conditions>

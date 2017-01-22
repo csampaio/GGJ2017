@@ -70,7 +70,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="15" loop="1" name="Watter" pingpong="0" repeatcount="1" repeatto="0" sid="887519294066183" speed="24">
+                <animation framecount="15" loop="1" name="Water" pingpong="0" repeatcount="1" repeatto="0" sid="887519294066183" speed="24">
                     <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_agua_p2\seq_agua_p2__00000.png">
                         <collision-poly>
                             <point x="0" y="0.647059" />
@@ -483,7 +483,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="30" loop="1" name="Watter" pingpong="0" repeatcount="1" repeatto="0" sid="543828200798625" speed="24">
+                <animation framecount="30" loop="1" name="Water" pingpong="0" repeatcount="1" repeatto="0" sid="543828200798625" speed="24">
                     <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\projetos\GGJ2017\Assets\seq_persona_p3_agua\seq_persona_p3_agua_00000.png">
                         <collision-poly>
                             <point x="0.078125" y="0.635294" />
