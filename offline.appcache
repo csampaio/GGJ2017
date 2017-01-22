@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1485056971
+#1485070542
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -11,9 +11,20 @@ images/player2-sheet0.png
 images/player2-sheet1.png
 images/switch-sheet0.png
 images/water-sheet0.png
+images/water-sheet1.png
+images/water-sheet2.png
 images/fire-sheet0.png
 images/shock-sheet0.png
-images/sprite-sheet0.png
+images/shock-sheet1.png
+images/shock-sheet2.png
+images/mountain-sheet0.png
+images/sky-sheet0.png
+images/mountais-sheet0.png
+images/wavewater-sheet0.png
+images/wavewater-sheet1.png
+images/wavewater-sheet2.png
+images/wavewater-sheet3.png
+images/destroyer-sheet0.png
 icon-16.png
 icon-32.png
 icon-114.png
