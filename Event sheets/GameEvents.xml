@@ -47,6 +47,12 @@
                     <param id="0" name="Variable">EndPos</param>
                     <param id="1" name="Value">MinScroll + 1000</param>
                 </action>
+                <action id="0" name="Play" sid="512039759575847" type="Audio">
+                    <param id="0" name="Audio file">background2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="187479007602488">
@@ -90,29 +96,149 @@
             <sub-events>
                 <event-group description="" sid="907285754952579" title="Hit">
                     <sub-events>
-                        <event-block sid="108626936531541">
+                        <event-block sid="378304748056256">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="181050604192738" type="Water">
+                                <condition id="2" name="Is playing" sid="891956411702422" type="Water">
+                                    <param id="0" name="Animation">&quot;On&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="253968709698670">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="777068498553968" type="Player">
+                                            <param id="0" name="Object">Water</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="234275105288888" type="Player">
+                                            <param id="0" name="Animation">&quot;Watter&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="821037158144848" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="524809249881578" type="Player">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="486379110512124">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="826302992221977" type="Player2">
+                                            <param id="0" name="Object">Water</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="340581458251970" type="Player2">
+                                            <param id="0" name="Animation">&quot;Watter&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="682968409493751" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="926408136891822" type="Player2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="303683236761218">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="377822606678495" type="Water">
                                     <param id="0" name="Instance variable">On</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="792981150341130">
+                                <event-block sid="183496975936523">
                                     <conditions>
-                                        <condition id="0" name="On collision with another object" sid="562135901995115" type="Player">
-                                            <param id="0" name="Object">Water</param>
+                                        <condition id="0" name="On collision with another object" sid="177325498682417" type="Player">
+                                            <param id="0" name="Object">Fire</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="539136591263356" type="Player">
-                                            <param id="0" name="Animation">&quot;Watter&quot;</param>
+                                        <action id="4" name="Set animation" sid="609115285096072" type="Player">
+                                            <param id="0" name="Animation">&quot;Fire&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="149735712830062" type="System">
+                                        <action id="-16" name="Wait" sid="268506960696052" type="System">
                                             <param id="0" name="Seconds">PlayerDBuffTime</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="867438015847036" type="Player">
+                                        <action id="4" name="Set animation" sid="374659074680590" type="Player">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="125303252672294">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="355057925438982" type="Player2">
+                                            <param id="0" name="Object">Fire</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="180478632562730" type="Player2">
+                                            <param id="0" name="Animation">&quot;Fire&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="902759026373444" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="898804689953665" type="Player2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="215156898870338">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="449463161063660" type="Water">
+                                    <param id="0" name="Instance variable">On</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="146147543080038">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="585444220829406" type="Player">
+                                            <param id="0" name="Object">Shock</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="915635787866469" type="Player">
+                                            <param id="0" name="Animation">&quot;Shock&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="143350354415098" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="812743601770662" type="Player">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="719250949015219">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="811530441996834" type="Player2">
+                                            <param id="0" name="Object">Shock</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="857615326331955" type="Player2">
+                                            <param id="0" name="Animation">&quot;Shock&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="329867967064457" type="System">
+                                            <param id="0" name="Seconds">PlayerDBuffTime</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="317835456220800" type="Player2">
                                             <param id="0" name="Animation">&quot;Default&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
@@ -222,6 +348,12 @@
                                 <action behavior="Platform" id="7" name="Simulate control" sid="920090423032114" type="Player">
                                     <param id="0" name="Control">2</param>
                                 </action>
+                                <action id="0" name="Play" sid="264823205237516" type="Audio">
+                                    <param id="0" name="Audio file">Personagem - Pulo3</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="958031268345904">
@@ -242,6 +374,12 @@
                                             <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
+                                        <action id="0" name="Play" sid="570074917463266" type="Audio">
+                                            <param id="0" name="Audio file">Switch - On</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -257,6 +395,12 @@
                                 </action>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="227086714695686" type="Player2">
                                     <param id="0" name="Control">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="217887343834591" type="Audio">
+                                    <param id="0" name="Audio file">Personagem - Pulo4</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -277,6 +421,12 @@
                                         <action id="0" name="Call function" sid="217172504658868" type="Function">
                                             <param id="0" name="Name">&quot;TriggerSwitch&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Play" sid="302319066045349" type="Audio">
+                                            <param id="0" name="Audio file">Switch - On</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -655,11 +805,20 @@
                             <param id="0" name="Comparison">4</param>
                             <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
                         </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="733831656221368" type="Audio">
+                            <param id="0" name="Tag">&quot;robotdie&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="637681267689285" type="System">
                             <param id="0" name="Variable">PlayerDie</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="321804478857234" type="Audio">
+                            <param id="0" name="Audio file">Personagem - Robo morrendo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;robotdie&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -670,11 +829,20 @@
                             <param id="0" name="Comparison">4</param>
                             <param id="1" name="Y co-ordinate">ViewportBottom(&quot;Game&quot;)</param>
                         </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="350017658512268" type="Audio">
+                            <param id="0" name="Tag">&quot;aliendie&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="869566517259602" type="System">
                             <param id="0" name="Variable">PlayerDie</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="205903578409063" type="Audio">
+                            <param id="0" name="Audio file">Personagem - Robo morrendo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;aliendie&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -718,6 +886,12 @@
                                 <action id="0" name="Set text" sid="197163435097867" type="Winner">
                                     <param id="0" name="Text">&quot;Robot WIN!&quot;</param>
                                 </action>
+                                <action id="0" name="Play" sid="144417986054287" type="Audio">
+                                    <param id="0" name="Audio file">Eventos - Vitoria</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="558933755996966">
@@ -740,6 +914,12 @@
                                     <actions>
                                         <action id="0" name="Set text" sid="208040805105941" type="Winner">
                                             <param id="0" name="Text">&quot;Alien WIN!&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="857109404879701" type="Audio">
+                                            <param id="0" name="Audio file">Eventos - Vitoria</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -801,6 +981,75 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="734932947500276" type="WaveWater" />
+                        <action id="6" name="Stop" sid="322046882471485" type="Audio">
+                            <param id="0" name="Tag">&quot;waterwave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="968213329027269">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="404176569249458" type="WaveWater">
+                            <param id="0" name="Object">Fire</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="625585027374864" type="Fire">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="657980971352198" type="System">
+                            <param id="0" name="Seconds">SwitchTime</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="655225597020565" type="Fire">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="876190985829833">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="919593464581095" type="WaveWater">
+                            <param id="0" name="Object">Destroyer</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="735088773460681" type="WaveWater" />
+                        <action id="6" name="Stop" sid="664300876419069" type="Audio">
+                            <param id="0" name="Tag">&quot;firewave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="470199652340197">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="612417758751875" type="WaveWater">
+                            <param id="0" name="Object">Shock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="797533330105325" type="Shock">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="377863042091782" type="System">
+                            <param id="0" name="Seconds">SwitchTime</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="258534278965140" type="Shock">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="917245846772965">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="153745002127710" type="WaveWater">
+                            <param id="0" name="Object">Destroyer</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="256952083288482" type="WaveWater" />
+                        <action id="6" name="Stop" sid="825461137980388" type="Audio">
+                            <param id="0" name="Tag">&quot;shockwave&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -874,6 +1123,84 @@
                 </action>
                 <action behavior="Bullet" id="5" name="Set enabled" sid="110099856132609" type="WaveWater">
                     <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="635227967134298" type="Audio">
+                    <param id="0" name="Audio file">Agua - Onda novo1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;waterwave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="444428277142474">
+            <conditions>
+                <condition id="0" name="On function" sid="586478915656035" type="Function">
+                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="647218955297504" type="Switch">
+                    <param id="0" name="Object">WaveWater</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="931995183185609" type="WaveWater">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="9" name="Set scale" sid="829540833195744" type="WaveWater">
+                    <param id="0" name="Scale">Self.Scale</param>
+                </action>
+                <action id="-15" name="Set visible" sid="354934353898180" type="WaveWater">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="455710629938888" type="WaveWater">
+                    <param id="0" name="Instance variable">IsOn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="453283747059261" type="WaveWater">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="386238316625726" type="Audio">
+                    <param id="0" name="Audio file">Fogo - Onda2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;firewave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538711704823768">
+            <conditions>
+                <condition id="0" name="On function" sid="275928558499818" type="Function">
+                    <param id="0" name="Name">&quot;TriggerWaterWave&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="637210144180938" type="Switch">
+                    <param id="0" name="Object">WaveWater</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="953158591211128" type="WaveWater">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="9" name="Set scale" sid="629094926396127" type="WaveWater">
+                    <param id="0" name="Scale">Self.Scale</param>
+                </action>
+                <action id="-15" name="Set visible" sid="449029050515173" type="WaveWater">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="419406227713549" type="WaveWater">
+                    <param id="0" name="Instance variable">IsOn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="263388897762362" type="WaveWater">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="667836936875749" type="Audio">
+                    <param id="0" name="Audio file">Eletrico - Onda3</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;shockwave&quot;</param>
                 </action>
             </actions>
         </event-block>

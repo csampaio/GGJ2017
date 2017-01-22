@@ -10,6 +10,7 @@
     <unique-id>14fir0wto7bt4</unique-id>
     <saved-with-version>24100</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -1728,6 +1729,9 @@
         <object-type name="Text" sid="722765126875239">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Audio" sid="342227748821016">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1744,9 +1748,51 @@
         </global-instance>
         <global-instance type="Keyboard" uid="24" />
         <global-instance type="Function" uid="19" />
+        <global-instance type="Audio" uid="38">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="Agua - Ativacao plataforma2.m4a" />
+        <file name="Agua - Ativacao plataforma2.ogg" />
+        <file name="Agua - Onda novo1.m4a" />
+        <file name="Agua - Onda novo1.ogg" />
+        <file name="Eletrico - Ativacao2.m4a" />
+        <file name="Eletrico - Ativacao2.ogg" />
+        <file name="Eletrico - Onda3.m4a" />
+        <file name="Eventos - Vitoria.m4a" />
+        <file name="Eventos - Vitoria.ogg" />
+        <file name="Fogo - Ativacao plataforma2.m4a" />
+        <file name="Fogo - Ativacao plataforma2.ogg" />
+        <file name="Fogo - Onda2.m4a" />
+        <file name="Personagem - Pulo3.m4a" />
+        <file name="Personagem - Pulo3.ogg" />
+        <file name="Personagem - Robo morrendo.m4a" />
+        <file name="Personagem - Robo morrendo.ogg" />
+        <file name="Splash.m4a" />
+        <file name="Splash.ogg" />
+        <file name="Switch - On.m4a" />
+        <file name="Eletrico - Onda3.ogg" />
+        <file name="Fogo - Onda2.ogg" />
+        <file name="Switch - On.ogg" />
+        <file name="Personagem - Pulo4.m4a" />
+        <file name="Personagem - Pulo4.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="background2.m4a" />
+        <file name="background2.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
