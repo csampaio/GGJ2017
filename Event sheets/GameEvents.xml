@@ -55,6 +55,9 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-2" name="Set Y" sid="290041811978139" type="FinishLine">
+                    <param id="0" name="Y">EndPos</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="187479007602488">

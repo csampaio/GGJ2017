@@ -2056,6 +2056,48 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="FinishLine" sid="624834570839735">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="444787030808700" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\GGJ2017\Assets\seq_finish\seq_finish_00023.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart" sid="611055907123420">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249092721864784" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503401" original-source="E:\projetos\GGJ2017\Assets\img_bt_restart.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Over" pingpong="0" repeatcount="1" repeatto="0" sid="217202013188883" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503401" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
