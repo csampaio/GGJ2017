@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1485116211
+#1485672463
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -37,6 +37,9 @@ images/startbtn-sheet2.png
 images/bg-sheet0.png
 images/bgcredits-sheet0.png
 images/backbtn-sheet0.png
+images/finishline-sheet0.png
+images/finishline-sheet1.png
+images/restart-sheet0.png
 media/agua%20-%20ativacao%20plataforma2.m4a
 media/agua%20-%20ativacao%20plataforma2.ogg
 media/agua%20-%20onda%20novo1.m4a

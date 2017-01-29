@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1485116211,
+	"version": 1485672463,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -38,6 +38,9 @@
 		"images/bg-sheet0.png",
 		"images/bgcredits-sheet0.png",
 		"images/backbtn-sheet0.png",
+		"images/finishline-sheet0.png",
+		"images/finishline-sheet1.png",
+		"images/restart-sheet0.png",
 		"media/agua - ativacao plataforma2.m4a",
 		"media/agua - ativacao plataforma2.ogg",
 		"media/agua - onda novo1.m4a",
